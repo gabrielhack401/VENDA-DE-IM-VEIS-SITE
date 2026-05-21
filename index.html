@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Apartamento Jardim do Engenho | Vitta Jardins do Engenho - Sertãozinho/SP</title>
+    <meta name="description" content="Apartamento no Vitta Jardins do Engenho, 43m², 2 dormitórios, 1 vaga, R$165.000, financiável. Lazer completo com piscinas, academia, churrasqueira. Contato (16) 98819-1302">
+    <meta name="keywords" content="apartamento Sertãozinho, Vitta Jardins do Engenho, imóvel Sertãozinho, apartamento 2 quartos">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #f0f4f8; font-family: 'Inter', sans-serif; color: #1a2a3a; scroll-behavior: smooth; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 1.5rem; }
+        .hero { text-align: center; padding: 2rem 0 1rem; border-bottom: 2px solid #d4e0ec; margin-bottom: 2rem; background: linear-gradient(135deg, #1a472a, #0d2b1a); border-radius: 28px; color: white; }
+        .logo-icon { font-size: 3rem; background: #ff8c00; width: 80px; height: 80px; line-height: 90px; border-radius: 50%; color: white; margin: 0 auto 0.75rem; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        h1 { font-family: 'Playfair Display', serif; font-size: 2rem; letter-spacing: -1px; margin-bottom: 0.5rem; }
+        .tagline { font-size: 0.9rem; background: rgba(255,255,255,0.2); display: inline-block; padding: 0.4rem 1.2rem; border-radius: 40px; }
+        .video-container { width: 100%; margin: 1.5rem 0 2rem 0; border-radius: 28px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: #000; }
+        .video-container video { width: 100%; height: auto; min-height: 400px; display: block; outline: none; }
+        .info-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .info-card { background: white; border-radius: 20px; padding: 1.5rem; text-align: center; border: 1px solid #e0e8f0; transition: all 0.3s; cursor: pointer; }
+        .info-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .info-card i { font-size: 2.5rem; color: #ff8c00; margin-bottom: 0.5rem; }
+        .info-card h3 { font-size: 0.9rem; color: #6b7c8a; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px; }
+        .info-card .valor { font-size: 1.8rem; font-weight: 800; color: #1a472a; }
+        .detalhes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .detalhe-item { background: white; border-radius: 20px; padding: 1.2rem; display: flex; align-items: center; gap: 1rem; border: 1px solid #e0e8f0; transition: all 0.3s; }
+        .detalhe-item:hover { transform: translateX(5px); border-color: #ff8c00; }
+        .detalhe-item i { font-size: 2rem; color: #ff8c00; width: 50px; text-align: center; }
+        .detalhe-item .texto h4 { font-size: 0.85rem; color: #6b7c8a; margin-bottom: 0.2rem; text-transform: uppercase; }
+        .detalhe-item .texto p { font-size: 1rem; font-weight: 600; color: #1a2a3a; }
+        .lazer-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .lazer-item { background: white; border-radius: 50px; padding: 0.8rem 1rem; text-align: center; border: 1px solid #e0e8f0; font-size: 0.85rem; font-weight: 500; transition: all 0.3s; cursor: pointer; }
+        .lazer-item:hover { background: #ff8c00; color: white; border-color: #ff8c00; }
+        .lazer-item:hover i { color: white; }
+        .lazer-item i { color: #ff8c00; margin-right: 8px; transition: 0.3s; }
+        .whatsapp-btn { display: flex; align-items: center; justify-content: center; gap: 12px; background: #25D366; color: white; text-decoration: none; padding: 1rem; border-radius: 60px; font-weight: 700; font-size: 1.2rem; margin: 2rem 0; transition: 0.2s; border: none; cursor: pointer; }
+        .whatsapp-btn:hover { background: #128C7E; transform: scale(1.02); }
+        .footer { background: #1a2a3a; color: white; margin-top: 3rem; padding: 1.5rem; text-align: center; border-radius: 30px 30px 0 0; font-size: 0.8rem; }
+        .contact-info { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 0.8rem 0; }
+        .contact-info i { color: #ff8c00; margin-right: 6px; }
+        hr { margin: 1rem 0; border-color: #2a3a4a; }
+        .financiavel { background: #e8f5e9; padding: 0.8rem; border-radius: 15px; color: #2e7d32; font-weight: bold; margin-top: 1rem; text-align: center; }
+        .secao-titulo { color: #1a472a; margin-bottom: 1rem; font-family: 'Playfair Display', serif; font-size: 1.6rem; display: flex; align-items: center; gap: 10px; }
+        .secao-titulo i { color: #ff8c00; font-size: 1.6rem; }
+        .btn-voltar { position: fixed; bottom: 20px; right: 20px; background: #1a472a; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: 0.3s; z-index: 1000; }
+        .btn-voltar:hover { background: #ff8c00; transform: scale(1.1); }
+        @media (max-width: 650px) { .container { padding: 1rem; } h1 { font-size: 1.5rem; } .info-card .valor { font-size: 1.3rem; } .video-container video { min-height: 250px; } .secao-titulo { font-size: 1.3rem; } }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .info-card, .detalhe-item, .lazer-item { animation: fadeIn 0.5s ease forwards; }
+        .info-card:nth-child(1) { animation-delay: 0.1s; }
+        .info-card:nth-child(2) { animation-delay: 0.2s; }
+        .info-card:nth-child(3) { animation-delay: 0.3s; }
+        .info-card:nth-child(4) { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <div class="logo-icon"><i class="fas fa-home"></i></div>
+        <h1>APARTAMENTO JARDIM DO ENGENHO</h1>
+        <div class="tagline"><i class="fas fa-map-marker-alt"></i> Vitta Jardins do Engenho - Sertãozinho/SP</div>
+    </div>
+
+    <!-- VÍDEO MP4 -->
+    <div class="video-container">
+        <video controls preload="metadata">
+            <source src="video-apartamento.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos. 
+        </video>
+    </div>
+
+    <!-- CARDS PRINCIPAIS -->
+    <div class="info-cards">
+        <div class="info-card"><i class="fas fa-tag"></i><h3>Preço</h3><div class="valor">R$ 165.000</div></div>
+        <div class="info-card"><i class="fas fa-bed"></i><h3>Dormitórios</h3><div class="valor">2</div></div>
+        <div class="info-card"><i class="fas fa-car"></i><h3>Garagem</h3><div class="valor">1 vaga</div></div>
+        <div class="info-card"><i class="fas fa-ruler-combined"></i><h3>Área</h3><div class="valor">43m²</div></div>
+    </div>
+
+    <!-- DESCRIÇÃO COMPLETA -->
+    <div style="background: white; border-radius: 20px; padding: 1.5rem; margin-bottom: 2rem; border: 1px solid #e0e8f0;">
+        <div class="secao-titulo"><i class="fas fa-info-circle"></i> Sobre o Imóvel</div>
+        <p style="line-height: 1.6; color: #3a4a5a;"><strong>Lindo Apartamento no Vitta Jardins do Engenho</strong> - Lazer Completo em Sertãozinho. Oportunidade incrível no Jardim do Engenho!</p>
+        <p style="line-height: 1.6; color: #3a4a5a; margin-top: 1rem;">Apartamento de <strong>43m² com planta inteligente</strong>, ideal para quem busca conforto, segurança e praticidade. Projetado para otimizar cada espaço, com ambientes integrados que proporcionam sensação de amplitude.</p>
+        <ul style="margin-top: 1rem; margin-left: 1.5rem; color: #3a4a5a; line-height: 1.8;">
+            <li><i class="fas fa-check-circle" style="color: #1a472a;"></i> 2 dormitórios com excelente ventilação natural</li>
+            <li><i class="fas fa-check-circle" style="color: #1a472a;"></i> Sala e cozinha integradas (conceito aberto)</li>
+            <li><i class="fas fa-check-circle" style="color: #1a472a;"></i> 1 vaga de garagem coberta</li>
+            <li><i class="fas fa-check-circle" style="color: #1a472a;"></i> Condomínio com lazer de clube completo</li>
+            <li><i class="fas fa-check-circle" style="color: #1a472a;"></i> Portaria e segurança 24 horas</li>
+            <li><i class="fas fa-check-circle" style="color: #1a472a;"></i> Excelente acabamento e conservação</li>
+        </ul>
+        <p style="line-height: 1.6; color: #3a4a5a; margin-top: 1rem;"><strong><i class="fas fa-map-pin"></i> Localização:</strong> Próximo a supermercados, escolas, farmácias e comércios. Fácil acesso ao centro e principais saídas da cidade (SP-322 e Anel Viário).</p>
+        <div class="financiavel"><i class="fas fa-check-circle"></i> ATUALIZAÇÕES! FINANCIÁVEL (Caixa Econômica, Itaú, Bradesco, Santander)</div>
+    </div>
+
+    <!-- DETALHES DO IMÓVEL -->
+    <div class="secao-titulo"><i class="fas fa-list-ul"></i> Detalhes do Imóvel</div>
+    <div class="detalhes-grid">
+        <div class="detalhe-item"><i class="fas fa-bed"></i><div class="texto"><h4>Dormitórios</h4><p>2 quartos amplos com ventilação cruzada</p></div></div>
+        <div class="detalhe-item"><i class="fas fa-toilet"></i><div class="texto"><h4>Banheiros</h4><p>1 banheiro social com box e louças brancas</p></div></div>
+        <div class="detalhe-item"><i class="fas fa-car"></i><div class="texto"><h4>Garagem</h4><p>1 vaga coberta com portão automático</p></div></div>
+        <div class="detalhe-item"><i class="fas fa-utensils"></i><div class="texto"><h4>Cozinha</h4><p>Integrada com sala, planejada com armários</p></div></div>
+        <div class="detalhe-item"><i class="fas fa-ruler-combined"></i><div class="texto"><h4>Área Total</h4><p>43m² de área privativa + área comum</p></div></div>
+        <div class="detalhe-item"><i class="fas fa-shield-alt"></i><div class="texto"><h4>Segurança</h4><p>Portaria 24h, câmeras e cercamento elétrico</p></div></div>
+        <div class="detalhe-item"><i class="fas fa-sun"></i><div class="texto"><h4>Ventilação</h4><p>Excelente insolação e ventilação natural</p></div></div>
+        <div class="detalhe-item"><i class="fas fa-tint"></i><div class="texto"><h4>Hidráulica</h4><p>Sistema individual de água e gás</p></div></div>
+        <div class="detalhe-item"><i class="fas fa-wifi"></i><div class="texto"><h4>Infraestrutura</h4><p>Pré-instalação para internet fibra óptica</p></div></div>
+        <div class="detalhe-item"><i class="fas fa-hand-holding-heart"></i><div class="texto"><h4>Condomínio</h4><p>Taxa condominial acessível</p></div></div>
+    </div>
+
+    <!-- LAZER COMPLETO -->
+    <div class="secao-titulo"><i class="fas fa-swimmer"></i> Lazer Completo do Condomínio</div>
+    <div class="lazer-grid">
+        <div class="lazer-item"><i class="fas fa-swimmer"></i> Piscina Adulto</div>
+        <div class="lazer-item"><i class="fas fa-child"></i> Piscina Infantil</div>
+        <div class="lazer-item"><i class="fas fa-dumbbell"></i> Academia Equipada</div>
+        <div class="lazer-item"><i class="fas fa-utensils"></i> Espaço Gourmet</div>
+        <div class="lazer-item"><i class="fas fa-fire"></i> Churrasqueira</div>
+        <div class="lazer-item"><i class="fas fa-dog"></i> Pet Play (espaço pets)</div>
+        <div class="lazer-item"><i class="fas fa-tree"></i> Playground Infantil</div>
+        <div class="lazer-item"><i class="fas fa-table-tennis"></i> Salão de Jogos</div>
+        <div class="lazer-item"><i class="fas fa-futbol"></i> Campo Society</div>
+        <div class="lazer-item"><i class="fas fa-spa"></i> Espaço Yoga/Meditação</div>
+        <div class="lazer-item"><i class="fas fa-book"></i> Sala de Leitura</div>
+        <div class="lazer-item"><i class="fas fa-bicycle"></i> Bicicletário</div>
+        <div class="lazer-item"><i class="fas fa-hand-sparkles"></i> Salão de Festas</div>
+        <div class="lazer-item"><i class="fas fa-wind"></i> Espaço de Convivência</div>
+        <div class="lazer-item"><i class="fas fa-seedling"></i> Jardim e Área Verde</div>
+        <div class="lazer-item"><i class="fas fa-shower"></i> Sauna Seca</div>
+    </div>
+
+    <!-- DIFERENCIAIS -->
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe8d4); border-radius: 20px; padding: 1.5rem; margin: 2rem 0; border-left: 5px solid #ff8c00;">
+        <div class="secao-titulo" style="color: #1a472a;"><i class="fas fa-star"></i> Diferenciais do Imóvel</div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+            <div><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Planta inteligente - sem desperdício</div>
+            <div><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Vista deslumbrante para áreas verdes</div>
+            <div><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Acabamento em porcelanato</div>
+            <div><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Esquadrias com isolamento térmico</div>
+            <div><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Próximo ao comércio e escolas</div>
+            <div><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Valorização garantida na região</div>
+        </div>
+    </div>
+
+    <!-- TRANSPARÊNCIA DE VALORES -->
+    <div style="background: white; border-radius: 20px; padding: 1.5rem; margin-bottom: 2rem; border: 1px solid #e0e8f0;">
+        <div class="secao-titulo"><i class="fas fa-calculator"></i> Transparência nos Valores</div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+            <div><strong>💰 Preço do Imóvel:</strong> R$ 165.000,00</div>
+            <div><strong>🏢 Condomínio:</strong> Consultar (valor acessível)</div>
+            <div><strong>🏠 IPTU:</strong> Valor reduzido (consulte)</div>
+            <div><strong>📋 ITBI:</strong> 2% (consulte condições)</div>
+        </div>
+        <div class="financiavel" style="margin-top: 1rem;"><i class="fas fa-handshake"></i> Aceita financiamento bancário (Caixa, Itaú, Bradesco, Santander) com até 80% do valor</div>
+    </div>
+
+    <!-- INFORMAÇÕES DO CORRETOR -->
+    <div style="background: #1a2a3a; border-radius: 20px; padding: 1.5rem; margin: 2rem 0; color: white;">
+        <div class="secao-titulo" style="color: white;"><i class="fas fa-user-tie"></i> Corretor Responsável</div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+            <div><i class="fas fa-user"></i> Nome: [Nome do Corretor]</div>
+            <div><i class="fab fa-whatsapp"></i> (16) 98819-1302</div>
+            <div><i class="fas fa-id-card"></i> CRECI: [Número]</div>
+            <div><i class="fas fa-envelope"></i> contato@imobiliaria.com.br</div>
+        </div>
+    </div>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento de R$ 165.000 no Vitta Jardins do Engenho. Vi o vídeo e gostaria de mais informações sobre visitas, financiamento e documentação!" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i> Falar com corretor - (16) 98819-1302
+    </a>
+
+    <!-- LINK FACEBOOK -->
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <a href="https://www.facebook.com/marketplace/item/1691785458836544/" target="_blank" style="color: #1877f2; text-decoration: none; font-weight: 600; font-size: 1rem;">
+            <i class="fab fa-facebook" style="font-size: 1.2rem;"></i> Ver anúncio original no Facebook Marketplace
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div><i class="fas fa-home" style="color:#ff8c00"></i> Corretor de Imóveis Especializado em Sertãozinho/SP</div>
+        <div class="contact-info">
+            <span><i class="fab fa-whatsapp"></i> (16) 98819-1302</span>
+            <span><i class="fas fa-map-marker-alt"></i> Jardim do Engenho - Sertãozinho/SP</span>
+            <span><i class="fas fa-clock"></i> Atendimento 9h às 19h - Todos os dias</span>
+        </div>
+        <hr>
+        <div>© 2026 - Todos os direitos reservados. Visitas agendadas de terça a domingo.</div>
+        <div style="margin-top: 0.8rem; font-size: 0.7rem; opacity: 0.7;">Documentação completa e financiamento disponível. Consulte condições.</div>
+    </div>
+</div>
+
+<!-- BOTÃO VOLTAR AO TOPO -->
+<a href="#" class="btn-voltar" id="btnVoltar"><i class="fas fa-arrow-up"></i></a>
+
+<script>
+    // Botão voltar ao topo
+    const btnVoltar = document.getElementById('btnVoltar');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            btnVoltar.style.display = 'flex';
+        } else {
+            btnVoltar.style.display = 'none';
+        }
+    });
+    btnVoltar.style.display = 'none';
+    
+    // Animação de contato (clique no WhatsApp)
+    console.log('Site do Apartamento Jardim do Engenho carregado com sucesso!');
+    
+    // Pré-carregamento de vídeo
+    const video = document.querySelector('video');
+    if (video) {
+        video.addEventListener('loadedmetadata', function() {
+            console.log('Vídeo carregado com sucesso');
+        });
+    }
+    
+    // Máscara para telefone (clique)
+    const whatsappBtns = document.querySelectorAll('.whatsapp-btn');
+    whatsappBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            console.log('Redirecionando para WhatsApp do corretor');
+        });
+    });
+    
+    // Dados estruturados para SEO
+    const scriptSEO = document.createElement('script');
+    scriptSEO.type = 'application/ld+json';
+    scriptSEO.text = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Apartamento Vitta Jardins do Engenho",
+        "description": "Apartamento de 43m² com 2 dormitórios, 1 vaga, lazer completo no Jardim do Engenho, Sertãozinho/SP",
+        "offers": {
+            "@type": "Offer",
+            "price": "165000",
+            "priceCurrency": "BRL",
+            "availability": "https://schema.org/InStock"
+        }
+    });
+    document.head.appendChild(scriptSEO);
+</script>
+</body>
+</html>

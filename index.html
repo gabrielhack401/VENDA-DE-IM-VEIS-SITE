@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>Apartamento 2 Dormitórios por R$ 165 mil | Vitta Jardins do Engenho - Sertãozinho/SP</title>
+    <title>Apartamento 2 Quartos por R$ 165 mil | Vitta Jardins do Engenho - Sertãozinho/SP</title>
     <meta name="description" content="Apartamento no Vitta Jardins do Engenho, 43m², 2 dormitórios, 1 vaga, R$165.000, financiável. Lazer completo com piscinas, academia, churrasqueira. Contato (16) 98819-1302">
     <meta name="keywords" content="apartamento Sertãozinho, Vitta Jardins do Engenho, imóvel Sertãozinho, apartamento 2 quartos, Vitta Jardins do Engenho Sertãozinho, apartamento financiável">
     <meta name="author" content="Dr. Guilherme José de Souza Moretti - OAB/SP 362.611">
@@ -31,83 +31,358 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { background: #f0f4f8; font-family: 'Inter', sans-serif; color: #1a2a3a; scroll-behavior: smooth; }
-        .container { max-width: 1280px; margin: 0 auto; padding: 1.5rem; }
-        .hero { text-align: center; padding: 2rem 0 1rem; margin-bottom: 2rem; background: linear-gradient(135deg, #1a472a, #0d2b1a); border-radius: 28px; color: white; position: relative; overflow: hidden; }
-        .hero::before { content: "🏷️ ÚLTIMA UNIDADE"; position: absolute; top: 20px; right: -30px; background: #ff8c00; color: #1a2a3a; padding: 8px 40px; transform: rotate(45deg); font-size: 0.8rem; font-weight: bold; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+        .container { max-width: 1280px; margin: 0 auto; padding: 2rem; }
+        
+        /* Header */
+        .hero { text-align: center; padding: 2rem 0 1.5rem; margin-bottom: 2rem; background: linear-gradient(135deg, #1a472a, #0d2b1a); border-radius: 28px; color: white; position: relative; overflow: hidden; }
+        .hero::before { content: "🏷️ ÚLTIMAS UNIDADES"; position: absolute; top: 20px; right: -30px; background: #ff8c00; color: #1a2a3a; padding: 8px 40px; transform: rotate(45deg); font-size: 0.8rem; font-weight: bold; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
         .logo-icon { font-size: 3rem; background: #ff8c00; width: 80px; height: 80px; line-height: 90px; border-radius: 50%; color: white; margin: 0 auto 0.75rem; }
-        h1 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 0.5rem; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 0.5rem; line-height: 1.3; }
         .tagline { font-size: 0.9rem; background: rgba(255,255,255,0.2); display: inline-block; padding: 0.4rem 1.2rem; border-radius: 40px; }
         
         /* Selos de destaque */
-        .selos { display: flex; justify-content: center; gap: 15px; margin-bottom: 1.5rem; flex-wrap: wrap; }
-        .selo { background: #ff8c00; color: #1a2a3a; padding: 6px 15px; border-radius: 50px; font-size: 0.8rem; font-weight: bold; display: inline-flex; align-items: center; gap: 6px; }
+        .selos { display: flex; justify-content: center; gap: 15px; margin-bottom: 2rem; flex-wrap: wrap; }
+        .selo { background: #ff8c00; color: #1a2a3a; padding: 8px 18px; border-radius: 50px; font-size: 0.85rem; font-weight: bold; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
         
+        /* Foto de Capa */
         .capa-container { width: 100%; margin: 1.5rem 0 2rem 0; border-radius: 28px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.15); background: #1a472a; cursor: pointer; }
         .capa-container img { width: 100%; height: auto; min-height: 400px; display: block; object-fit: cover; transition: transform 0.3s; }
         .capa-container img:hover { transform: scale(1.02); }
         
-        /* Galeria com zoom */
+        /* Galeria com mais fotos */
         .galeria-titulo { margin: 2rem 0 1rem; font-size: 1.5rem; color: #1a472a; display: flex; align-items: center; gap: 10px; }
         .galeria-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin: 1rem 0 2rem; }
         .galeria-item { border-radius: 20px; overflow: hidden; cursor: pointer; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .galeria-item:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.2); }
-        .galeria-item img { width: 100%; height: 150px; object-fit: cover; transition: transform 0.3s; }
+        .galeria-item img { width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s; }
         .galeria-item:hover img { transform: scale(1.05); }
         
-        /* Modal de zoom da foto */
-        .modal-zoom { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 2000; align-items: center; justify-content: center; cursor: pointer; }
-        .modal-zoom.active { display: flex; }
-        .modal-zoom img { max-width: 90%; max-height: 90%; border-radius: 10px; box-shadow: 0 0 30px rgba(0,0,0,0.5); }
-        .modal-zoom .close-modal { position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer; }
+        /* Grid maior para mais fotos */
+        .galeria-grid-major { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 1rem 0 2rem; }
+        .galeria-item-major { border-radius: 20px; overflow: hidden; cursor: pointer; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .galeria-item-major:hover { transform: translateY(-5px); }
+        .galeria-item-major img { width: 100%; height: 180px; object-fit: cover; }
         
+        /* Modal de zoom */
+        .modal-zoom { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 2000; align-items: center; justify-content: center; cursor: pointer; }
+        .modal-zoom.active { display: flex; }
+        .modal-zoom img { max-width: 90%; max-height: 90%; border-radius: 10px; }
+        .modal-zoom .close-modal { position: absolute; top: 20px; right: 40px; color: white; font-size: 50px; cursor: pointer; font-weight: bold; }
+        
+        /* Cards */
         .info-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
-        .info-card { background: white; border-radius: 20px; padding: 1.5rem; text-align: center; border: 1px solid #e0e8f0; transition: 0.3s; cursor: pointer; }
-        .info-card:hover { transform: translateY(-5px); border-color: #ff8c00; }
+        .info-card { background: white; border-radius: 20px; padding: 1.5rem; text-align: center; border: 1px solid #e0e8f0; transition: 0.3s; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .info-card:hover { transform: translateY(-5px); border-color: #ff8c00; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
         .info-card i { font-size: 2.5rem; color: #ff8c00; margin-bottom: 0.5rem; }
-        .info-card h3 { font-size: 0.85rem; color: #6b7c8a; text-transform: uppercase; }
+        .info-card h3 { font-size: 0.85rem; color: #6b7c8a; text-transform: uppercase; letter-spacing: 1px; }
         .info-card .valor { font-size: 1.6rem; font-weight: 800; color: #1a472a; }
-        .descricao-box { background: white; border-radius: 20px; padding: 1.5rem; margin-bottom: 2rem; border: 1px solid #e0e8f0; }
-        .secao-titulo { color: #1a472a; margin-bottom: 1rem; font-family: 'Playfair Display', serif; font-size: 1.5rem; display: flex; align-items: center; gap: 10px; }
+        
+        /* Descrição */
+        .descricao-box { background: white; border-radius: 20px; padding: 2rem; margin-bottom: 2rem; border: 1px solid #e0e8f0; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .secao-titulo { color: #1a472a; margin-bottom: 1.2rem; font-family: 'Playfair Display', serif; font-size: 1.5rem; display: flex; align-items: center; gap: 10px; }
         .secao-titulo i { color: #ff8c00; }
+        .descricao-texto { line-height: 1.7; margin-bottom: 1rem; }
         .lista-beneficios { margin-top: 1rem; margin-left: 1.5rem; list-style: none; }
-        .lista-beneficios li { margin: 0.7rem 0; display: flex; align-items: center; gap: 10px; }
-        .financiavel { background: #e8f5e9; padding: 0.8rem; border-radius: 15px; color: #2e7d32; font-weight: bold; text-align: center; margin-top: 1rem; cursor: pointer; }
+        .lista-beneficios li { margin: 0.8rem 0; display: flex; align-items: center; gap: 12px; }
+        .lista-beneficios li i { color: #1a472a; font-size: 1.1rem; }
+        
+        /* Destaque financiável */
+        .financiavel { background: linear-gradient(135deg, #e8f5e9, #c8e6c9); padding: 1rem; border-radius: 15px; color: #2e7d32; font-weight: bold; text-align: center; margin-top: 1.5rem; cursor: pointer; border-left: 4px solid #2e7d32; }
+        
+        /* Detalhes Grid */
         .detalhes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
         .detalhe-item { background: white; border-radius: 15px; padding: 1rem; display: flex; align-items: center; gap: 1rem; border: 1px solid #e0e8f0; cursor: pointer; transition: 0.3s; }
-        .detalhe-item:hover { transform: translateX(5px); border-color: #ff8c00; }
+        .detalhe-item:hover { transform: translateX(5px); border-color: #ff8c00; background: #fffaf5; }
         .detalhe-item i { font-size: 1.8rem; color: #ff8c00; width: 45px; text-align: center; }
-        .detalhe-item .texto h4 { font-size: 0.75rem; color: #6b7c8a; text-transform: uppercase; }
+        .detalhe-item .texto h4 { font-size: 0.75rem; color: #6b7c8a; text-transform: uppercase; letter-spacing: 1px; }
         .detalhe-item .texto p { font-size: 0.95rem; font-weight: 600; }
+        
+        /* Lazer Grid */
         .lazer-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.8rem; margin: 1.5rem 0; }
-        .lazer-item { background: white; border-radius: 40px; padding: 0.7rem 1rem; text-align: center; border: 1px solid #e0e8f0; font-size: 0.8rem; transition: 0.3s; cursor: pointer; }
-        .lazer-item:hover { background: #ff8c00; color: white; }
+        .lazer-item { background: white; border-radius: 40px; padding: 0.8rem 1rem; text-align: center; border: 1px solid #e0e8f0; font-size: 0.85rem; transition: 0.3s; cursor: pointer; }
+        .lazer-item:hover { background: #ff8c00; color: white; transform: scale(1.02); }
         .lazer-item i { margin-right: 6px; }
+        
+        /* Diferenciais */
         .diferenciais-box { background: linear-gradient(135deg, #fff3e0, #ffe8d4); border-radius: 20px; padding: 1.5rem; margin: 1.5rem 0; border-left: 4px solid #ff8c00; }
         .diferenciais-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.8rem; margin-top: 1rem; }
-        .diferenciais-grid div { cursor: pointer; padding: 0.3rem 0; }
+        .diferenciais-grid div { cursor: pointer; padding: 0.4rem 0; }
+        
+        /* Valores */
         .valores-box { background: white; border-radius: 20px; padding: 1.5rem; margin-bottom: 1.5rem; border: 1px solid #e0e8f0; }
         .valores-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin: 1rem 0; }
-        .valor-item { padding: 0.6rem; background: #f8f9fa; border-radius: 10px; cursor: pointer; }
-        .advogado-box { background: linear-gradient(135deg, #1a2a3a, #0d1a24); border-radius: 20px; padding: 1.5rem; margin: 1.5rem 0; color: white; }
-        .advogado-box .secao-titulo { color: white; }
-        .advogado-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.8rem; margin-top: 1rem; }
-        .advogado-item { padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
-        .advogado-item i { color: #ff8c00; width: 28px; margin-right: 8px; }
-        .badge-academico { display: inline-block; background: #ff8c00; color: #1a2a3a; padding: 3px 10px; border-radius: 50px; font-size: 0.7rem; font-weight: bold; margin-right: 6px; margin-bottom: 5px; }
-        .whatsapp-btn { display: flex; align-items: center; justify-content: center; gap: 10px; background: #25D366; color: white; text-decoration: none; padding: 1rem; border-radius: 60px; font-weight: 700; font-size: 1.1rem; margin: 1.5rem 0; transition: 0.3s; cursor: pointer; }
-        .whatsapp-btn:hover { background: #128C7E; transform: scale(1.02); }
-        .facebook-link { text-align: center; margin-bottom: 1.5rem; }
-        .facebook-link a { color: #1877f2; text-decoration: none; font-weight: 600; }
-        .footer { background: #1a2a3a; color: white; margin-top: 2rem; padding: 1.5rem; text-align: center; border-radius: 30px 30px 0 0; font-size: 0.8rem; }
-        .contact-info { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 0.8rem 0; }
-        .contact-info i { color: #ff8c00; margin-right: 5px; }
-        hr { margin: 1rem 0; border-color: #2a4a5a; }
-        .btn-voltar { position: fixed; bottom: 20px; right: 20px; background: #1a472a; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; z-index: 1000; cursor: pointer; }
-        .btn-voltar:hover { background: #ff8c00; }
+        .valor-item { padding: 0.8rem; background: #f8f9fa; border-radius: 10px; cursor: pointer; transition: 0.2s; }
+        .valor-item:hover { background: #fff3e0; }
         
-        /* Ajustes mobile */
+        /* Advogado - tamanho reduzido */
+        .advogado-box { background: #1a2a3a; border-radius: 20px; padding: 1.2rem; margin: 1.5rem 0; color: white; }
+        .advogado-box .secao-titulo { color: white; font-size: 1.2rem; margin-bottom: 0.8rem; }
+        .advogado-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.5rem; margin-top: 0.5rem; }
+        .advogado-item { padding: 0.3rem 0; font-size: 0.85rem; border-bottom: none; }
+        .advogado-item i { color: #ff8c00; width: 25px; margin-right: 6px; font-size: 0.9rem; }
+        .badge-academico { display: inline-block; background: #ff8c00; color: #1a2a3a; padding: 2px 8px; border-radius: 50px; font-size: 0.65rem; font-weight: bold; margin-right: 5px; margin-bottom: 3px; }
+        
+        /* Botão WhatsApp - mais chamativo */
+        .whatsapp-btn { display: flex; align-items: center; justify-content: center; gap: 12px; background: #25D366; color: white; text-decoration: none; padding: 1.2rem; border-radius: 60px; font-weight: 700; font-size: 1.2rem; margin: 1.5rem 0; transition: 0.3s; cursor: pointer; box-shadow: 0 8px 20px rgba(37,211,102,0.3); }
+        .whatsapp-btn:hover { background: #128C7E; transform: scale(1.02); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+        
+        .facebook-link { text-align: center; margin-bottom: 1.5rem; }
+        .facebook-link a { color: #1877f2; text-decoration: none; font-weight: 600; font-size: 1rem; }
+        
+        /* Footer - nome do advogado menor */
+        .footer { background: #1a2a3a; color: white; margin-top: 2rem; padding: 1.5rem; text-align: center; border-radius: 30px 30px 0 0; font-size: 0.75rem; }
+        .footer .advogado-nome { font-size: 0.85rem; font-weight: 500; margin-bottom: 0.5rem; }
+        .contact-info { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 0.5rem 0; font-size: 0.8rem; }
+        .contact-info i { color: #ff8c00; margin-right: 5px; }
+        hr { margin: 0.8rem 0; border-color: #2a4a5a; }
+        
+        .btn-voltar { position: fixed; bottom: 20px; right: 20px; background: #1a472a; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; z-index: 1000; cursor: pointer; transition: 0.3s; }
+        .btn-voltar:hover { background: #ff8c00; transform: scale(1.1); }
+        
+        /* Responsivo */
         @media (max-width: 768px) { 
             .container { padding: 1rem; } 
+            h1 { font-size: 1.3rem; } 
+            .galeria-grid { grid-template-columns: repeat(2, 1fr); }
+            .galeria-grid-major { grid-template-columns: repeat(2, 1fr); }
+            .capa-container img { min-height: 250px; }
+            .info-card .valor { font-size: 1.2rem; }
+            .info-card { padding: 1rem; }
+            .hero::before { font-size: 0.6rem; padding: 5px 30px; top: 15px; right: -35px; }
+            .selo { font-size: 0.7rem; padding: 5px 12px; }
+            .secao-titulo { font-size: 1.2rem; }
+            .advogado-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 480px) { 
+            .info-cards { grid-template-columns: 1fr 1fr; gap: 0.8rem; } 
+            .info-card i { font-size: 1.8rem; } 
+            .info-card .valor { font-size: 1.1rem; }
+            .galeria-grid-major { grid-template-columns: 1fr; }
+            .galeria-item-major img { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK64WDNH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- Meta Pixel (noscript) -->
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=991858916560412&ev=PageView&noscript=1"/></noscript>
+
+<div class="container">
+    <!-- Header -->
+    <div class="hero">
+        <div class="logo-icon"><i class="fas fa-home"></i></div>
+        <h1>Apartamento 2 Quartos por R$ 165 mil</h1>
+        <div class="tagline"><i class="fas fa-map-marker-alt"></i> Vitta Jardins do Engenho - Sertãozinho/SP</div>
+    </div>
+    
+    <!-- Selos de urgência/destaque -->
+    <div class="selos">
+        <span class="selo"><i class="fas fa-fire"></i> ÚLTIMAS UNIDADES</span>
+        <span class="selo"><i class="fas fa-handshake"></i> FINANCIAMENTO FACILITADO</span>
+        <span class="selo"><i class="fas fa-key"></i> ENTREGA IMEDIATA</span>
+        <span class="selo"><i class="fas fa-gem"></i> OPORTUNIDADE IMPERDÍVEL</span>
+    </div>
+
+    <!-- Foto de Capa -->
+    <div class="capa-container" onclick="abrirZoom(this.querySelector('img').src)">
+        <img src="foto-capa-apartamento.jpg" alt="Apartamento Vitta Jardins do Engenho">
+    </div>
+
+    <!-- Galeria com mais fotos (8 fotos no total) -->
+    <div class="galeria-titulo"><i class="fas fa-images"></i> Galeria de Fotos (clique para ampliar)</div>
+    <div class="galeria-grid-major">
+        <div class="galeria-item-major" onclick="abrirZoom(this.querySelector('img').src)"><img src="foto1.jpg" alt="Sala de estar" onerror="this.parentElement.style.display='none'"></div>
+        <div class="galeria-item-major" onclick="abrirZoom(this.querySelector('img').src)"><img src="foto2.jpg" alt="Cozinha" onerror="this.parentElement.style.display='none'"></div>
+        <div class="galeria-item-major" onclick="abrirZoom(this.querySelector('img').src)"><img src="foto3.jpg" alt="Quarto" onerror="this.parentElement.style.display='none'"></div>
+        <div class="galeria-item-major" onclick="abrirZoom(this.querySelector('img').src)"><img src="foto4.jpg" alt="Área de lazer" onerror="this.parentElement.style.display='none'"></div>
+        <div class="galeria-item-major" onclick="abrirZoom(this.querySelector('img').src)"><img src="foto5.jpg" alt="Piscina" onerror="this.parentElement.style.display='none'"></div>
+        <div class="galeria-item-major" onclick="abrirZoom(this.querySelector('img').src)"><img src="foto6.jpg" alt="Academia" onerror="this.parentElement.style.display='none'"></div>
+        <div class="galeria-item-major" onclick="abrirZoom(this.querySelector('img').src)"><img src="foto7.jpg" alt="Churrasqueira" onerror="this.parentElement.style.display='none'"></div>
+        <div class="galeria-item-major" onclick="abrirZoom(this.querySelector('img').src)"><img src="foto8.jpg" alt="Playground" onerror="this.parentElement.style.display='none'"></div>
+        <div class="galeria-item-major" onclick="abrirZoom(this.querySelector('img').src)"><img src="foto9.jpg" alt="Vista do empreendimento" onerror="this.parentElement.style.display='none'"></div>
+    </div>
+
+    <!-- Modal de zoom -->
+    <div id="zoomModal" class="modal-zoom" onclick="fecharZoom()">
+        <span class="close-modal">&times;</span>
+        <img id="zoomImg" src="" alt="Foto ampliada">
+    </div>
+
+    <!-- Cards Principais -->
+    <div class="info-cards">
+        <div class="info-card" onclick="fbq('track', 'ViewContent', {content_name: 'Preco'}); gtag('event', 'view_item', {item_name: 'Preco'});"><i class="fas fa-tag"></i><h3>Preço</h3><div class="valor">R$ 165.000</div></div>
+        <div class="info-card" onclick="fbq('track', 'ViewContent', {content_name: 'Dormitorios'}); gtag('event', 'view_item', {item_name: 'Dormitorios'});"><i class="fas fa-bed"></i><h3>Dormitórios</h3><div class="valor">2</div></div>
+        <div class="info-card" onclick="fbq('track', 'ViewContent', {content_name: 'Garagem'}); gtag('event', 'view_item', {item_name: 'Garagem'});"><i class="fas fa-car"></i><h3>Garagem</h3><div class="valor">1 vaga</div></div>
+        <div class="info-card" onclick="fbq('track', 'ViewContent', {content_name: 'Area'}); gtag('event', 'view_item', {item_name: 'Area'});"><i class="fas fa-ruler-combined"></i><h3>Área</h3><div class="valor">43m²</div></div>
+    </div>
+
+    <!-- Descrição -->
+    <div class="descricao-box">
+        <div class="secao-titulo"><i class="fas fa-info-circle"></i> Sobre o Imóvel</div>
+        <p class="descricao-texto"><strong>Lindo Apartamento no Vitta Jardins do Engenho</strong> - Lazer Completo em Sertãozinho. Apartamento de <strong>43m² com planta inteligente</strong>, ideal para quem busca conforto, segurança e praticidade. Excelente oportunidade para primeiro imóvel ou investimento.</p>
+        <ul class="lista-beneficios">
+            <li><i class="fas fa-check-circle"></i> 2 dormitórios com excelente ventilação natural</li>
+            <li><i class="fas fa-check-circle"></i> Sala e cozinha integradas (conceito aberto) - ambiente moderno</li>
+            <li><i class="fas fa-check-circle"></i> 1 vaga de garagem coberta</li>
+            <li><i class="fas fa-check-circle"></i> Condomínio com lazer completo (clube)</li>
+            <li><i class="fas fa-check-circle"></i> Portaria e segurança 24 horas</li>
+            <li><i class="fas fa-check-circle"></i> Acabamento de qualidade e pronto para morar</li>
+        </ul>
+        <p class="descricao-texto"><strong><i class="fas fa-map-pin"></i> Localização:</strong> Próximo a supermercados (Atacadão, Savegnago), escolas (Sesi, Sesc), farmácias, hospitais e comércios. Fácil acesso ao centro e principais saídas da cidade (SP-322 e Anel Viário).</p>
+        <div class="financiavel" onclick="fbq('track', 'ViewContent', {content_name: 'Financiavel'}); gtag('event', 'view_item', {item_name: 'Financiavel'});"><i class="fas fa-check-circle"></i> ATUALIZAÇÕES! FINANCIÁVEL - Consulte condições</div>
+    </div>
+
+    <!-- Detalhes -->
+    <div class="secao-titulo"><i class="fas fa-list-ul"></i> Detalhes do Imóvel</div>
+    <div class="detalhes-grid">
+        <div class="detalhe-item" onclick="fbq('track', 'ViewContent', {content_name: 'DetDormitorios'}); gtag('event', 'view_item', {item_name: 'DetDormitorios'});"><i class="fas fa-bed"></i><div class="texto"><h4>Dormitórios</h4><p>2 quartos amplos com ventilação cruzada</p></div></div>
+        <div class="detalhe-item" onclick="fbq('track', 'ViewContent', {content_name: 'DetBanheiro'}); gtag('event', 'view_item', {item_name: 'DetBanheiro'});"><i class="fas fa-toilet"></i><div class="texto"><h4>Banheiros</h4><p>1 banheiro social com box</p></div></div>
+        <div class="detalhe-item" onclick="fbq('track', 'ViewContent', {content_name: 'DetGaragem'}); gtag('event', 'view_item', {item_name: 'DetGaragem'});"><i class="fas fa-car"></i><div class="texto"><h4>Garagem</h4><p>1 vaga coberta com portão automático</p></div></div>
+        <div class="detalhe-item" onclick="fbq('track', 'ViewContent', {content_name: 'DetCozinha'}); gtag('event', 'view_item', {item_name: 'DetCozinha'});"><i class="fas fa-utensils"></i><div class="texto"><h4>Cozinha</h4><p>Integrada com sala, planejada</p></div></div>
+        <div class="detalhe-item" onclick="fbq('track', 'ViewContent', {content_name: 'DetArea'}); gtag('event', 'view_item', {item_name: 'DetArea'});"><i class="fas fa-ruler-combined"></i><div class="texto"><h4>Área Total</h4><p>43m² de área privativa</p></div></div>
+        <div class="detalhe-item" onclick="fbq('track', 'ViewContent', {content_name: 'DetSeguranca'}); gtag('event', 'view_item', {item_name: 'DetSeguranca'});"><i class="fas fa-shield-alt"></i><div class="texto"><h4>Segurança</h4><p>Portaria 24h, câmeras</p></div></div>
+        <div class="detalhe-item" onclick="fbq('track', 'ViewContent', {content_name: 'DetVentilacao'}); gtag('event', 'view_item', {item_name: 'DetVentilacao'});"><i class="fas fa-sun"></i><div class="texto"><h4>Ventilação</h4><p>Excelente insolação natural</p></div></div>
+        <div class="detalhe-item" onclick="fbq('track', 'ViewContent', {content_name: 'DetHidraulica'}); gtag('event', 'view_item', {item_name: 'DetHidraulica'});"><i class="fas fa-tint"></i><div class="texto"><h4>Hidráulica</h4><p>Sistema individual de água e gás</p></div></div>
+        <div class="detalhe-item" onclick="fbq('track', 'ViewContent', {content_name: 'DetInfra'}); gtag('event', 'view_item', {item_name: 'DetInfra'});"><i class="fas fa-wifi"></i><div class="texto"><h4>Infraestrutura</h4><p>Pré-instalação fibra óptica</p></div></div>
+        <div class="detalhe-item" onclick="fbq('track', 'ViewContent', {content_name: 'DetCondominio'}); gtag('event', 'view_item', {item_name: 'DetCondominio'});"><i class="fas fa-hand-holding-heart"></i><div class="texto"><h4>Condomínio</h4><p>Taxa acessível (consulte)</p></div></div>
+        <div class="detalhe-item" onclick="fbq('track', 'ViewContent', {content_name: 'DetEletrica'}); gtag('event', 'view_item', {item_name: 'DetEletrica'});"><i class="fas fa-bolt"></i><div class="texto"><h4>Elétrica</h4><p>Circuito para ar condicionado</p></div></div>
+        <div class="detalhe-item" onclick="fbq('track', 'ViewContent', {content_name: 'DetHidro'}); gtag('event', 'view_item', {item_name: 'DetHidro'});"><i class="fas fa-water"></i><div class="texto"><h4>Hidromassagem</h4><p>Pré-instalação disponível</p></div></div>
+    </div>
+
+    <!-- Lazer -->
+    <div class="secao-titulo"><i class="fas fa-swimmer"></i> Lazer Completo do Condomínio</div>
+    <div class="lazer-grid">
+        <div class="lazer-item" onclick="fbq('track', 'ViewContent', {content_name: 'LazPiscina'}); gtag('event', 'view_item', {item_name: 'LazPiscina'});"><i class="fas fa-swimmer"></i> Piscina Adulto</div>
+        <div class="lazer-item" onclick="fbq('track', 'ViewContent', {content_name: 'LazPiscinaInf'}); gtag('event', 'view_item', {item_name: 'LazPiscinaInf'});"><i class="fas fa-child"></i> Piscina Infantil</div>
+        <div class="lazer-item" onclick="fbq('track', 'ViewContent', {content_name: 'LazAcademia'}); gtag('event', 'view_item', {item_name: 'LazAcademia'});"><i class="fas fa-dumbbell"></i> Academia</div>
+        <div class="lazer-item" onclick="fbq('track', 'ViewContent', {content_name: 'LazGourmet'}); gtag('event', 'view_item', {item_name: 'LazGourmet'});"><i class="fas fa-utensils"></i> Espaço Gourmet</div>
+        <div class="lazer-item" onclick="fbq('track', 'ViewContent', {content_name: 'LazChurrasco'}); gtag('event', 'view_item', {item_name: 'LazChurrasco'});"><i class="fas fa-fire"></i> Churrasqueira</div>
+        <div class="lazer-item" onclick="fbq('track', 'ViewContent', {content_name: 'LazPet'}); gtag('event', 'view_item', {item_name: 'LazPet'});"><i class="fas fa-dog"></i> Pet Play</div>
+        <div class="lazer-item" onclick="fbq('track', 'ViewContent', {content_name: 'LazPlayground'}); gtag('event', 'view_item', {item_name: 'LazPlayground'});"><i class="fas fa-tree"></i> Playground</div>
+        <div class="lazer-item" onclick="fbq('track', 'ViewContent', {content_name: 'LazJogos'}); gtag('event', 'view_item', {item_name: 'LazJogos'});"><i class="fas fa-table-tennis"></i> Salão de Jogos</div>
+        <div class="lazer-item" onclick="fbq('track', 'ViewContent', {content_name: 'LazCampo'}); gtag('event', 'view_item', {item_name: 'LazCampo'});"><i class="fas fa-futbol"></i> Campo Society</div>
+        <div class="lazer-item" onclick="fbq('track', 'ViewContent', {content_name: 'LazLeitura'}); gtag('event', 'view_item', {item_name: 'LazLeitura'});"><i class="fas fa-book"></i> Sala de Leitura</div>
+        <div class="lazer-item" onclick="fbq('track', 'ViewContent', {content_name: 'LazBike'}); gtag('event', 'view_item', {item_name: 'LazBike'});"><i class="fas fa-bicycle"></i> Bicicletário</div>
+        <div class="lazer-item" onclick="fbq('track', 'ViewContent', {content_name: 'LazFestas'}); gtag('event', 'view_item', {item_name: 'LazFestas'});"><i class="fas fa-hand-sparkles"></i> Salão de Festas</div>
+        <div class="lazer-item" onclick="fbq('track', 'ViewContent', {content_name: 'LazJardim'}); gtag('event', 'view_item', {item_name: 'LazJardim'});"><i class="fas fa-seedling"></i> Jardim</div>
+        <div class="lazer-item" onclick="fbq('track', 'ViewContent', {content_name: 'LazSauna'}); gtag('event', 'view_item', {item_name: 'LazSauna'});"><i class="fas fa-shower"></i> Sauna</div>
+        <div class="lazer-item" onclick="fbq('track', 'ViewContent', {content_name: 'LazQuadra'}); gtag('event', 'view_item', {item_name: 'LazQuadra'});"><i class="fas fa-volleyball-ball"></i> Quadra</div>
+    </div>
+
+    <!-- Diferenciais -->
+    <div class="diferenciais-box">
+        <div class="secao-titulo" style="color:#1a472a;"><i class="fas fa-star"></i> Diferenciais do Imóvel</div>
+        <div class="diferenciais-grid">
+            <div onclick="fbq('track', 'ViewContent', {content_name: 'DifPlanta'}); gtag('event', 'view_item', {item_name: 'DifPlanta'});"><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Planta inteligente - sem desperdício</div>
+            <div onclick="fbq('track', 'ViewContent', {content_name: 'DifAcabamento'}); gtag('event', 'view_item', {item_name: 'DifAcabamento'});"><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Acabamento premium em porcelanato</div>
+            <div onclick="fbq('track', 'ViewContent', {content_name: 'DifValorizacao'}); gtag('event', 'view_item', {item_name: 'DifValorizacao'});"><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Valorização garantida na região</div>
+            <div onclick="fbq('track', 'ViewContent', {content_name: 'DifDocumentacao'}); gtag('event', 'view_item', {item_name: 'DifDocumentacao'});"><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Documentação totalmente regular</div>
+            <div onclick="fbq('track', 'ViewContent', {content_name: 'DifPrimeiro'}); gtag('event', 'view_item', {item_name: 'DifPrimeiro'});"><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Primeiro morador - nunca foi alugado</div>
+            <div onclick="fbq('track', 'ViewContent', {content_name: 'DifIsolamento'}); gtag('event', 'view_item', {item_name: 'DifIsolamento'});"><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Esquadrias com isolamento térmico</div>
+        </div>
+    </div>
+
+    <!-- Valores -->
+    <div class="valores-box">
+        <div class="secao-titulo"><i class="fas fa-calculator"></i> Transparência nos Valores</div>
+        <div class="valores-grid">
+            <div class="valor-item" onclick="fbq('track', 'ViewContent', {content_name: 'ValPreco'}); gtag('event', 'view_item', {item_name: 'ValPreco'});"><strong>💰 Preço do Imóvel:</strong> R$ 165.000</div>
+            <div class="valor-item" onclick="fbq('track', 'ViewContent', {content_name: 'ValCondominio'}); gtag('event', 'view_item', {item_name: 'ValCondominio'});"><strong>🏢 Condomínio:</strong> R$ 250 (aproximado)</div>
+            <div class="valor-item" onclick="fbq('track', 'ViewContent', {content_name: 'ValIPTU'}); gtag('event', 'view_item', {item_name: 'ValIPTU'});"><strong>🏠 IPTU:</strong> R$ 80/mês (aproximado)</div>
+            <div class="valor-item" onclick="fbq('track', 'ViewContent', {content_name: 'ValITBI'}); gtag('event', 'view_item', {item_name: 'ValITBI'});"><strong>📋 ITBI:</strong> 2% sobre o valor</div>
+            <div class="valor-item" onclick="fbq('track', 'ViewContent', {content_name: 'ValChave'}); gtag('event', 'view_item', {item_name: 'ValChave'});"><strong>🔑 Chave na mão:</strong> Sim, pronto para morar</div>
+            <div class="valor-item" onclick="fbq('track', 'ViewContent', {content_name: 'ValEscritura'}); gtag('event', 'view_item', {item_name: 'ValEscritura'});"><strong>📄 Documentação:</strong> Escritura pronta</div>
+        </div>
+        <div class="financiavel" onclick="fbq('track', 'ViewContent', {content_name: 'FinanciamentoInfo'}); gtag('event', 'view_item', {item_name: 'FinanciamentoInfo'});"><i class="fas fa-handshake"></i> Aceita financiamento bancário (Caixa, Itaú, Bradesco, Santander) com até 80% do valor - Entrada negociável</div>
+    </div>
+
+    <!-- Advogado - versão reduzida -->
+    <div class="advogado-box">
+        <div class="secao-titulo" style="color: white;"><i class="fas fa-gavel"></i> Assessoria Jurídica</div>
+        <div class="advogado-grid">
+            <div class="advogado-item"><i class="fas fa-user-tie"></i> <strong>Dr. Guilherme José de Souza Moretti</strong></div>
+            <div class="advogado-item"><i class="fas fa-id-card"></i> OAB/SP 362.611</div>
+            <div class="advogado-item"><i class="fas fa-graduation-cap"></i> Doutor USP | Mestre USP | Direito UFU | Eng. Elétrica UFU</div>
+            <div class="advogado-item"><i class="fas fa-briefcase"></i> Advocacia Empresarial | Direito Condominial</div>
+            <div class="advogado-item"><i class="fas fa-envelope"></i> guilherme@moretti.adv.br | <i class="fab fa-whatsapp"></i> (16) 98819-1302</div>
+        </div>
+    </div>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento de R$ 165.000 no Vitta Jardins do Engenho. Vi o site e gostaria de agendar uma visita!" target="_blank" class="whatsapp-btn" onclick="fbq('track', 'Lead', {content_name: 'WhatsApp'}); gtag('event', 'generate_lead', {lead_source: 'WhatsApp'});">
+        <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i> Agendar visita - (16) 98819-1302
+    </a>
+
+    <!-- Facebook -->
+    <div class="facebook-link">
+        <a href="https://www.facebook.com/marketplace/item/1691785458836544/" target="_blank" onclick="fbq('track', 'ViewContent', {content_name: 'Facebook'}); gtag('event', 'view_item', {item_name: 'FacebookLink'});">
+            <i class="fab fa-facebook"></i> Ver anúncio no Facebook Marketplace
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="advogado-nome">Dr. Guilherme José de Souza Moretti - OAB/SP 362.611</div>
+        <div class="contact-info">
+            <span><i class="fab fa-whatsapp"></i> (16) 98819-1302</span>
+            <span><i class="fas fa-envelope"></i> guilherme@moretti.adv.br</span>
+            <span><i class="fas fa-map-marker-alt"></i> Ribeirão Preto - SP / Sertãozinho - SP</span>
+        </div>
+        <hr>
+        <div>© 2026 - Todos os direitos reservados | Documentação completa e financiamento disponível</div>
+    </div>
+</div>
+
+<!-- Botão Voltar -->
+<a href="#" class="btn-voltar" id="btnVoltar"><i class="fas fa-arrow-up"></i></a>
+
+<script>
+    // Botão voltar ao topo
+    const btnVoltar = document.getElementById('btnVoltar');
+    window.addEventListener('scroll', function() {
+        btnVoltar.style.display = window.scrollY > 400 ? 'flex' : 'none';
+    });
+    btnVoltar.style.display = 'none';
+    btnVoltar.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    
+    // Zoom nas fotos
+    function abrirZoom(src) {
+        const modal = document.getElementById('zoomModal');
+        const img = document.getElementById('zoomImg');
+        img.src = src;
+        modal.classList.add('active');
+    }
+    
+    function fecharZoom() {
+        const modal = document.getElementById('zoomModal');
+        modal.classList.remove('active');
+    }
+    
+    // Tecla ESC para fechar zoom
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            fecharZoom();
+        }
+    });
+    
+    // Logs
+    if (typeof fbq !== 'undefined') {
+        console.log('✅ Meta Pixel carregado - ID: 991858916560412');
+    }
+    if (typeof gtag !== 'undefined') {
+        console.log('✅ Google Analytics carregado - ID: G-Y8FD6KZWG5');
+    }
+    console.log('🏠 Site Apartamento Jardim do Engenho - Versão 3.0 com melhorias');
+</script>
+
+</body>
+</html>            .container { padding: 1rem; } 
             h1 { font-size: 1.3rem; } 
             .galeria-grid { grid-template-columns: repeat(2, 1fr); } 
             .capa-container img { min-height: 250px; }

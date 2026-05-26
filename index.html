@@ -17,6 +17,24 @@
     })(window,document,'script','dataLayer','GTM-TK64WDNH');</script>
     <!-- End Google Tag Manager -->
     
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '991858916560412');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=991858916560412&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -97,6 +115,187 @@
         .footer { background: #1a2a3a; color: white; margin-top: 2rem; padding: 1.5rem; text-align: center; border-radius: 30px 30px 0 0; font-size: 0.8rem; }
         .contact-info { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 0.8rem 0; }
         .contact-info i { color: #ff8c00; margin-right: 5px; }
+        hr { margin: 1rem 0; border-color: #2a4a5a; }
+        
+        /* Botão voltar */
+        .btn-voltar { position: fixed; bottom: 20px; right: 20px; background: #1a472a; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; z-index: 1000; }
+        .btn-voltar:hover { background: #ff8c00; }
+        
+        /* Responsivo */
+        @media (max-width: 768px) { .container { padding: 1rem; } h1 { font-size: 1.5rem; } .galeria-grid { grid-template-columns: repeat(2, 1fr); } .capa-container img { min-height: 250px; } }
+        @media (max-width: 480px) { .info-cards { grid-template-columns: 1fr 1fr; gap: 0.8rem; } .info-card { padding: 1rem; } .info-card i { font-size: 1.8rem; } .info-card .valor { font-size: 1.2rem; } }
+    </style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK64WDNH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- Meta Pixel Code (noscript) -->
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=991858916560412&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code (noscript) -->
+
+<div class="container">
+    <!-- Header -->
+    <div class="hero">
+        <div class="logo-icon"><i class="fas fa-home"></i></div>
+        <h1>APARTAMENTO JARDIM DO ENGENHO</h1>
+        <div class="tagline"><i class="fas fa-map-marker-alt"></i> Vitta Jardins do Engenho - Sertãozinho/SP</div>
+    </div>
+
+    <!-- Foto de Capa -->
+    <div class="capa-container">
+        <img src="foto-capa-apartamento.jpg" alt="Apartamento Vitta Jardins do Engenho">
+    </div>
+
+    <!-- Galeria -->
+    <div class="galeria-titulo"><i class="fas fa-images"></i> Galeria de Fotos</div>
+    <div class="galeria-grid">
+        <div class="galeria-item"><img src="foto1.jpg" alt="Foto 1" onerror="this.parentElement.style.display='none'"></div>
+        <div class="galeria-item"><img src="foto2.jpg" alt="Foto 2" onerror="this.parentElement.style.display='none'"></div>
+        <div class="galeria-item"><img src="foto3.jpg" alt="Foto 3" onerror="this.parentElement.style.display='none'"></div>
+        <div class="galeria-item"><img src="foto4.jpg" alt="Foto 4" onerror="this.parentElement.style.display='none'"></div>
+    </div>
+
+    <!-- Cards Principais -->
+    <div class="info-cards">
+        <div class="info-card"><i class="fas fa-tag"></i><h3>Preço</h3><div class="valor">R$ 165.000</div></div>
+        <div class="info-card"><i class="fas fa-bed"></i><h3>Dormitórios</h3><div class="valor">2</div></div>
+        <div class="info-card"><i class="fas fa-car"></i><h3>Garagem</h3><div class="valor">1 vaga</div></div>
+        <div class="info-card"><i class="fas fa-ruler-combined"></i><h3>Área</h3><div class="valor">43m²</div></div>
+    </div>
+
+    <!-- Descrição -->
+    <div class="descricao-box">
+        <div class="secao-titulo"><i class="fas fa-info-circle"></i> Sobre o Imóvel</div>
+        <p><strong>Lindo Apartamento no Vitta Jardins do Engenho</strong> - Lazer Completo em Sertãozinho. Apartamento de <strong>43m² com planta inteligente</strong>, ideal para quem busca conforto, segurança e praticidade.</p>
+        <ul class="lista-beneficios">
+            <li><i class="fas fa-check-circle"></i> 2 dormitórios com excelente ventilação natural</li>
+            <li><i class="fas fa-check-circle"></i> Sala e cozinha integradas (conceito aberto)</li>
+            <li><i class="fas fa-check-circle"></i> 1 vaga de garagem coberta</li>
+            <li><i class="fas fa-check-circle"></i> Condomínio com lazer completo</li>
+            <li><i class="fas fa-check-circle"></i> Portaria e segurança 24 horas</li>
+        </ul>
+        <div class="financiavel"><i class="fas fa-check-circle"></i> ATUALIZAÇÕES! FINANCIÁVEL</div>
+    </div>
+
+    <!-- Detalhes -->
+    <div class="secao-titulo"><i class="fas fa-list-ul"></i> Detalhes do Imóvel</div>
+    <div class="detalhes-grid">
+        <div class="detalhe-item"><i class="fas fa-bed"></i><div class="texto"><h4>Dormitórios</h4><p>2 quartos amplos</p></div></div>
+        <div class="detalhe-item"><i class="fas fa-toilet"></i><div class="texto"><h4>Banheiros</h4><p>1 banheiro social</p></div></div>
+        <div class="detalhe-item"><i class="fas fa-car"></i><div class="texto"><h4>Garagem</h4><p>1 vaga coberta</p></div></div>
+        <div class="detalhe-item"><i class="fas fa-utensils"></i><div class="texto"><h4>Cozinha</h4><p>Integrada com sala</p></div></div>
+        <div class="detalhe-item"><i class="fas fa-ruler-combined"></i><div class="texto"><h4>Área Total</h4><p>43m²</p></div></div>
+        <div class="detalhe-item"><i class="fas fa-shield-alt"></i><div class="texto"><h4>Segurança</h4><p>Portaria 24h</p></div></div>
+    </div>
+
+    <!-- Lazer -->
+    <div class="secao-titulo"><i class="fas fa-swimmer"></i> Lazer Completo</div>
+    <div class="lazer-grid">
+        <div class="lazer-item"><i class="fas fa-swimmer"></i> Piscina Adulto</div>
+        <div class="lazer-item"><i class="fas fa-child"></i> Piscina Infantil</div>
+        <div class="lazer-item"><i class="fas fa-dumbbell"></i> Academia</div>
+        <div class="lazer-item"><i class="fas fa-utensils"></i> Espaço Gourmet</div>
+        <div class="lazer-item"><i class="fas fa-fire"></i> Churrasqueira</div>
+        <div class="lazer-item"><i class="fas fa-dog"></i> Pet Play</div>
+        <div class="lazer-item"><i class="fas fa-tree"></i> Playground</div>
+        <div class="lazer-item"><i class="fas fa-table-tennis"></i> Salão de Jogos</div>
+        <div class="lazer-item"><i class="fas fa-futbol"></i> Campo Society</div>
+        <div class="lazer-item"><i class="fas fa-book"></i> Sala de Leitura</div>
+        <div class="lazer-item"><i class="fas fa-bicycle"></i> Bicicletário</div>
+        <div class="lazer-item"><i class="fas fa-seedling"></i> Jardim</div>
+    </div>
+
+    <!-- Diferenciais -->
+    <div class="diferenciais-box">
+        <div class="secao-titulo" style="color:#1a472a;"><i class="fas fa-star"></i> Diferenciais</div>
+        <div class="diferenciais-grid">
+            <div><i class="fas fa-check-circle"></i> Planta inteligente</div>
+            <div><i class="fas fa-check-circle"></i> Acabamento premium</div>
+            <div><i class="fas fa-check-circle"></i> Valorização garantida</div>
+            <div><i class="fas fa-check-circle"></i> Documentação regular</div>
+        </div>
+    </div>
+
+    <!-- Valores -->
+    <div class="valores-box">
+        <div class="secao-titulo"><i class="fas fa-calculator"></i> Transparência</div>
+        <div class="valores-grid">
+            <div class="valor-item"><strong>💰 Preço:</strong> R$ 165.000</div>
+            <div class="valor-item"><strong>🏢 Condomínio:</strong> R$ 250</div>
+            <div class="valor-item"><strong>🏠 IPTU:</strong> R$ 80/mês</div>
+            <div class="valor-item"><strong>📋 ITBI:</strong> 2%</div>
+        </div>
+        <div class="financiavel"><i class="fas fa-handshake"></i> Financiamento disponível (Caixa, Itaú, Bradesco)</div>
+    </div>
+
+    <!-- Advogado -->
+    <div class="advogado-box">
+        <div class="secao-titulo" style="color: white;"><i class="fas fa-gavel"></i> Assessoria Jurídica</div>
+        <div class="advogado-grid">
+            <div class="advogado-item"><i class="fas fa-user-tie"></i> <strong>Dr. Guilherme José de Souza Moretti</strong></div>
+            <div class="advogado-item"><i class="fas fa-id-card"></i> OAB/SP <strong>362.611</strong></div>
+            <div class="advogado-item">
+                <i class="fas fa-graduation-cap"></i> <strong>Formação:</strong>
+                <div style="margin-top: 5px;">
+                    <span class="badge-academico">Doutor USP</span>
+                    <span class="badge-academico">Mestre USP</span>
+                    <span class="badge-academico">Direito UFU</span>
+                    <span class="badge-academico">Eng. Elétrica UFU</span>
+                </div>
+            </div>
+            <div class="advogado-item"><i class="fas fa-briefcase"></i> Advocacia Empresarial | Direito Condominial | Direito Público</div>
+            <div class="advogado-item"><i class="fas fa-envelope"></i> guilherme@moretti.adv.br</div>
+            <div class="advogado-item"><i class="fab fa-whatsapp"></i> (16) 98819-1302</div>
+            <div class="advogado-item"><i class="fas fa-map-marker-alt"></i> Ribeirão Preto - SP / Sertãozinho - SP</div>
+        </div>
+    </div>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento de R$ 165.000 no Vitta Jardins do Engenho." target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> Falar com Dr. Guilherme - (16) 98819-1302
+    </a>
+
+    <!-- Facebook -->
+    <div class="facebook-link">
+        <a href="https://www.facebook.com/marketplace/item/1691785458836544/" target="_blank">
+            <i class="fab fa-facebook"></i> Ver anúncio no Facebook Marketplace
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div><i class="fas fa-gavel"></i> Dr. Guilherme José de Souza Moretti - OAB/SP 362.611</div>
+        <div class="contact-info">
+            <span><i class="fab fa-whatsapp"></i> (16) 98819-1302</span>
+            <span><i class="fas fa-envelope"></i> guilherme@moretti.adv.br</span>
+            <span><i class="fas fa-map-marker-alt"></i> Ribeirão Preto - SP</span>
+        </div>
+        <hr>
+        <div>© 2026 - Todos os direitos reservados</div>
+    </div>
+</div>
+
+<!-- Botão Voltar -->
+<a href="#" class="btn-voltar" id="btnVoltar"><i class="fas fa-arrow-up"></i></a>
+
+<script>
+    const btnVoltar = document.getElementById('btnVoltar');
+    window.addEventListener('scroll', function() {
+        btnVoltar.style.display = window.scrollY > 400 ? 'flex' : 'none';
+    });
+    btnVoltar.style.display = 'none';
+    btnVoltar.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+</body>
+</html>        .contact-info i { color: #ff8c00; margin-right: 5px; }
         hr { margin: 1rem 0; border-color: #2a4a5a; }
         
         /* Botão voltar */

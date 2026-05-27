@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>Apartamento 2 Quartos por R$ 165 mil | Vitta Jardins do Engenho - Sertãozinho/SP</title>
-    <meta name="description" content="Apartamento no Vitta Jardins do Engenho, 43m², 2 dormitórios, 1 vaga, R$165.000, financiável. Lazer completo com piscinas, academia, churrasqueira. Contato (16) 98819-1302">
-    <meta name="keywords" content="apartamento Sertãozinho, Vitta Jardins do Engenho, imóvel Sertãozinho, apartamento 2 quartos, aluguel Sertãozinho">
+    <title>Imóveis em Sertãozinho, Uberlândia e Ribeirão Preto | Venda e Aluguel</title>
+    <meta name="description" content="Apartamentos e casas para venda e aluguel em Sertãozinho, Uberlândia e Ribeirão Preto. Financiamento MCMV, entrada a partir de R$21.000. Contato (16) 98819-1302">
+    <meta name="keywords" content="apartamento Sertãozinho, aluguel Uberlândia, aluguel Ribeirão Preto, apartamento UFU, MCMV">
     <meta name="author" content="Dr. Guilherme José de Souza Moretti - OAB/SP 362.611">
     <meta name="robots" content="index, follow">
     
@@ -33,79 +33,68 @@
         body { background: #f5f7fa; font-family: 'Inter', sans-serif; color: #1a2a3a; scroll-behavior: smooth; }
         .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
         
-        /* Header moderno */
         .hero { text-align: center; padding: 2rem 1.5rem; margin-bottom: 2rem; background: linear-gradient(135deg, #1a472a, #0d2b1a); border-radius: 32px; color: white; }
-        .logo-icon { font-size: 3rem; background: #ff8c00; width: 80px; height: 80px; line-height: 90px; border-radius: 50%; color: white; margin: 0 auto 1rem; box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
-        h1 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 0.5rem; line-height: 1.3; }
-        .hero .preco-destaque { font-size: 1.8rem; font-weight: 800; background: rgba(255,255,255,0.15); display: inline-block; padding: 0.5rem 1.5rem; border-radius: 60px; margin-top: 0.8rem; }
-        .hero .preco-destaque i { margin-right: 8px; }
-        .hero .tagline { font-size: 0.95rem; background: rgba(255,255,255,0.15); display: inline-block; padding: 0.4rem 1.2rem; border-radius: 40px; margin-top: 0.8rem; }
+        .logo-icon { font-size: 3rem; background: #ff8c00; width: 80px; height: 80px; line-height: 90px; border-radius: 50%; color: white; margin: 0 auto 1rem; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 0.5rem; line-height: 1.3; }
+        .hero .preco-destaque { font-size: 1.5rem; font-weight: 800; background: rgba(255,255,255,0.15); display: inline-block; padding: 0.5rem 1.5rem; border-radius: 60px; margin-top: 0.8rem; }
+        .hero .tagline { font-size: 0.9rem; background: rgba(255,255,255,0.15); display: inline-block; padding: 0.4rem 1.2rem; border-radius: 40px; margin-top: 0.8rem; }
         
         .feature-badges { display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
         .badge { background: white; border-radius: 60px; padding: 0.6rem 1.2rem; font-weight: 600; font-size: 0.85rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: inline-flex; align-items: center; gap: 8px; color: #1a472a; }
         .badge i { color: #ff8c00; }
         .badge-highlight { background: #ff8c00; color: white; }
-        .badge-highlight i { color: white; }
-        
-        .capa-container { width: 100%; margin-bottom: 2rem; border-radius: 28px; overflow: hidden; box-shadow: 0 20px 35px rgba(0,0,0,0.1); cursor: pointer; }
-        .capa-container img { width: 100%; height: auto; min-height: 400px; display: block; object-fit: cover; transition: transform 0.3s; }
-        .capa-container img:hover { transform: scale(1.02); }
         
         .section-title { margin: 2.5rem 0 1.2rem; font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #1a472a; display: flex; align-items: center; gap: 10px; border-left: 4px solid #ff8c00; padding-left: 1rem; }
         .section-title-aluguel { margin: 2.5rem 0 1.2rem; font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #1a472a; display: flex; align-items: center; gap: 10px; border-left: 4px solid #2196F3; padding-left: 1rem; }
+        .section-title-uberlandia { margin: 2.5rem 0 1.2rem; font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #1a472a; display: flex; align-items: center; gap: 10px; border-left: 4px solid #9C27B0; padding-left: 1rem; }
+        .section-title-ribeirao { margin: 2.5rem 0 1.2rem; font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #1a472a; display: flex; align-items: center; gap: 10px; border-left: 4px solid #E91E63; padding-left: 1rem; }
         
+        .imoveis-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+        .imovel-card { background: white; border-radius: 24px; overflow: hidden; border: 1px solid #e8ecf0; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .imovel-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .imovel-card-header { padding: 1rem; text-align: center; color: white; }
+        .imovel-card-header h3 { font-size: 1.2rem; margin-bottom: 0.3rem; }
+        .imovel-card-header .preco { font-size: 1.6rem; font-weight: 800; }
+        .imovel-card-body { padding: 1.2rem; }
+        .imovel-card-body p { margin: 0.5rem 0; line-height: 1.5; }
+        .imovel-card-body i { width: 25px; margin-right: 8px; }
+        .imovel-features { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+        .imovel-feature { border-radius: 50px; padding: 0.3rem 0.8rem; font-size: 0.75rem; background: #f0f2f5; }
+        .btn-whatsapp-imovel { display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 0.7rem 1.2rem; border-radius: 50px; font-weight: 600; margin-top: 1rem; transition: 0.2s; text-align: center; width: 100%; }
+        .btn-whatsapp-imovel:hover { background: #128C7E; transform: scale(1.02); }
+        
+        .bg-venda { background: linear-gradient(135deg, #1a472a, #0d2b1a); }
+        .bg-aluguel { background: linear-gradient(135deg, #2196F3, #1976D2); }
+        .bg-uberlandia { background: linear-gradient(135deg, #9C27B0, #7B1FA2); }
+        .bg-ribeirao { background: linear-gradient(135deg, #E91E63, #C2185B); }
+        .bg-mcmv { background: linear-gradient(135deg, #ff9800, #f57c00); }
+        
+        .capa-container { width: 100%; margin-bottom: 2rem; border-radius: 28px; overflow: hidden; box-shadow: 0 20px 35px rgba(0,0,0,0.1); cursor: pointer; }
+        .capa-container img { width: 100%; height: auto; min-height: 400px; display: block; object-fit: cover; }
         .galeria-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 1rem 0 1.5rem; }
-        .galeria-item { border-radius: 20px; overflow: hidden; cursor: pointer; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.08); aspect-ratio: 1 / 1; }
-        .galeria-item:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+        .galeria-item { border-radius: 20px; overflow: hidden; cursor: pointer; transition: 0.3s; aspect-ratio: 1 / 1; }
+        .galeria-item:hover { transform: translateY(-5px); }
         .galeria-item img { width: 100%; height: 100%; object-fit: cover; }
-        
         .info-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin: 2rem 0; }
         .info-card { background: white; border-radius: 20px; padding: 1.5rem; text-align: center; border: 1px solid #e8ecf0; transition: 0.3s; cursor: pointer; }
-        .info-card:hover { transform: translateY(-4px); border-color: #ff8c00; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .info-card:hover { transform: translateY(-4px); border-color: #ff8c00; }
         .info-card i { font-size: 2.2rem; color: #ff8c00; margin-bottom: 0.8rem; }
-        .info-card h3 { font-size: 0.8rem; color: #6b7c8a; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .info-card h3 { font-size: 0.8rem; color: #6b7c8a; text-transform: uppercase; }
         .info-card .valor { font-size: 1.5rem; font-weight: 800; color: #1a472a; }
-        
-        /* Cards de aluguel */
-        .aluguel-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
-        .aluguel-card { background: white; border-radius: 24px; overflow: hidden; border: 1px solid #e8ecf0; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .aluguel-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
-        .aluguel-card-header { background: linear-gradient(135deg, #2196F3, #1976D2); color: white; padding: 1rem; text-align: center; }
-        .aluguel-card-header h3 { font-size: 1.3rem; margin-bottom: 0.3rem; }
-        .aluguel-card-header .preco-aluguel { font-size: 1.8rem; font-weight: 800; }
-        .aluguel-card-body { padding: 1.2rem; }
-        .aluguel-card-body p { margin: 0.5rem 0; line-height: 1.5; }
-        .aluguel-card-body i { color: #2196F3; width: 25px; margin-right: 8px; }
-        .aluguel-features { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
-        .aluguel-feature { background: #f0f2f5; border-radius: 50px; padding: 0.3rem 0.8rem; font-size: 0.8rem; }
-        .btn-whatsapp-aluguel { display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 0.7rem 1.2rem; border-radius: 50px; font-weight: 600; margin-top: 1rem; transition: 0.2s; text-align: center; width: 100%; }
-        .btn-whatsapp-aluguel:hover { background: #128C7E; transform: scale(1.02); }
-        
         .descricao-box { background: white; border-radius: 24px; padding: 2rem; margin: 2rem 0; border: 1px solid #e8ecf0; }
-        .descricao-texto { line-height: 1.6; margin-bottom: 1rem; color: #2a3a4a; }
         .lista-beneficios { margin: 1.2rem 0 1rem 1.5rem; list-style: none; }
         .lista-beneficios li { margin: 0.7rem 0; display: flex; align-items: center; gap: 10px; }
-        .lista-beneficios li i { color: #1a472a; }
-        .financiavel { background: #e8f5e9; padding: 1rem; border-radius: 16px; text-align: center; font-weight: bold; color: #2e7d32; margin-top: 1rem; cursor: pointer; border-left: 4px solid #2e7d32; }
-        
+        .financiavel { background: #e8f5e9; padding: 1rem; border-radius: 16px; text-align: center; font-weight: bold; color: #2e7d32; margin-top: 1rem; cursor: pointer; }
         .detalhes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-        .detalhe-item { background: white; border-radius: 16px; padding: 1rem; display: flex; align-items: center; gap: 1rem; border: 1px solid #e8ecf0; cursor: pointer; transition: 0.2s; }
-        .detalhe-item:hover { transform: translateX(5px); border-color: #ff8c00; background: #fffaf5; }
+        .detalhe-item { background: white; border-radius: 16px; padding: 1rem; display: flex; align-items: center; gap: 1rem; border: 1px solid #e8ecf0; }
         .detalhe-item i { font-size: 1.6rem; color: #ff8c00; width: 40px; text-align: center; }
-        .detalhe-item .texto h4 { font-size: 0.7rem; color: #6b7c8a; text-transform: uppercase; margin-bottom: 0.2rem; }
-        .detalhe-item .texto p { font-weight: 600; }
-        
+        .detalhe-item .texto h4 { font-size: 0.7rem; color: #6b7c8a; text-transform: uppercase; }
         .lazer-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.8rem; margin: 1.5rem 0; }
         .lazer-item { background: white; border-radius: 40px; padding: 0.6rem 1rem; text-align: center; border: 1px solid #e8ecf0; font-size: 0.85rem; transition: 0.2s; cursor: pointer; }
         .lazer-item:hover { background: #ff8c00; color: white; }
-        
-        .diferenciais-box { background: linear-gradient(135deg, #fff8f0, #fff0e0); border-radius: 24px; padding: 1.8rem; margin: 2rem 0; border-left: 4px solid #ff8c00; }
-        .diferenciais-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.8rem; margin-top: 1rem; }
-        
         .valores-box { background: white; border-radius: 24px; padding: 1.8rem; margin: 2rem 0; border: 1px solid #e8ecf0; }
         .valores-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin: 1rem 0; }
-        .valor-item { padding: 0.7rem; background: #f8f9fa; border-radius: 12px; cursor: pointer; transition: 0.2s; }
-        .valor-item:hover { background: #fff3e0; }
+        .valor-item { padding: 0.7rem; background: #f8f9fa; border-radius: 12px; }
         
         .advogado-box { background: #1a2a3a; border-radius: 24px; padding: 1.5rem; margin: 2rem 0; color: white; }
         .advogado-box .section-title { color: white; border-left-color: #ff8c00; margin-top: 0; }
@@ -117,70 +106,61 @@
         .whatsapp-float:hover { transform: scale(1.1); background: #128C7E; }
         .whatsapp-btn { display: flex; align-items: center; justify-content: center; gap: 12px; background: #25D366; color: white; text-decoration: none; padding: 1rem; border-radius: 60px; font-weight: 700; font-size: 1.1rem; margin: 1.5rem 0; transition: 0.2s; }
         .whatsapp-btn:hover { background: #128C7E; transform: scale(1.02); }
-        
-        .facebook-link { text-align: center; margin-bottom: 2rem; }
-        .facebook-link a { color: #1877f2; text-decoration: none; font-weight: 600; }
-        
         .footer { background: #1a2a3a; color: white; margin-top: 2rem; padding: 1.5rem; text-align: center; border-radius: 30px 30px 0 0; font-size: 0.8rem; }
         .contact-info { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 0.8rem 0; }
         .contact-info i { color: #ff8c00; margin-right: 5px; }
         hr { margin: 0.8rem 0; border-color: #2a4a5a; }
-        
         .btn-voltar { position: fixed; bottom: 20px; right: 20px; background: #1a472a; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; z-index: 1000; transition: 0.3s; }
         .btn-voltar:hover { background: #ff8c00; transform: scale(1.1); }
-        
         .modal-zoom { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 2000; align-items: center; justify-content: center; cursor: pointer; }
         .modal-zoom.active { display: flex; }
         .modal-zoom img { max-width: 90%; max-height: 90%; border-radius: 10px; }
         .modal-zoom .close-modal { position: absolute; top: 20px; right: 40px; color: white; font-size: 50px; cursor: pointer; }
         
         @media (max-width: 900px) {
-            .info-cards { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+            .info-cards { grid-template-columns: repeat(2, 1fr); }
             .galeria-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 650px) {
             .container { padding: 1rem; }
             h1 { font-size: 1.5rem; }
-            .hero .preco-destaque { font-size: 1.3rem; padding: 0.3rem 1rem; }
             .info-cards { gap: 0.8rem; }
             .info-card { padding: 1rem; }
-            .info-card .valor { font-size: 1.2rem; }
             .badge { padding: 0.4rem 0.8rem; font-size: 0.7rem; }
             .whatsapp-float { width: 48px; height: 48px; font-size: 1.5rem; bottom: 70px; }
             .btn-voltar { width: 40px; height: 40px; }
-            .aluguel-grid { grid-template-columns: 1fr; }
+            .imoveis-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
-<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK64WDNH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=991858916560412&ev=PageView&noscript=1"/></noscript>
 
 <div class="container">
-    <!-- Header VENDA -->
+    <!-- Header -->
     <div class="hero">
         <div class="logo-icon"><i class="fas fa-building"></i></div>
-        <h1>Apartamento 2 Quartos<br>Jardim do Engenho</h1>
-        <div class="preco-destaque"><i class="fas fa-tag"></i> R$ 165.000</div>
-        <div class="tagline"><i class="fas fa-map-marker-alt"></i> Vitta Jardins do Engenho - Sertãozinho/SP</div>
+        <h1>Imóveis em Sertãozinho, Uberlândia e Ribeirão Preto</h1>
+        <div class="preco-destaque"><i class="fas fa-tag"></i> Venda e Aluguel</div>
+        <div class="tagline"><i class="fas fa-map-marker-alt"></i> Atendimento em toda região</div>
     </div>
     
     <div class="feature-badges">
         <span class="badge badge-highlight"><i class="fas fa-fire"></i> Últimas unidades</span>
-        <span class="badge"><i class="fas fa-handshake"></i> Financiamento facilitado</span>
+        <span class="badge"><i class="fas fa-handshake"></i> Financiamento MCMV</span>
         <span class="badge"><i class="fas fa-key"></i> Entrega imediata</span>
         <span class="badge"><i class="fas fa-gem"></i> Oportunidade única</span>
     </div>
 
-    <!-- VENDA - Foto de Capa -->
+    <!-- ==================== VENDA - VITTA JARDINS DO ENGENHO ==================== -->
+    <div class="section-title"><i class="fas fa-building"></i> Venda - Vitta Jardins do Engenho</div>
+    
     <div class="capa-container" onclick="abrirZoom(this.querySelector('img').src)">
         <img src="foto-capa-apartamento.jpg" alt="Apartamento Vitta Jardins do Engenho">
     </div>
 
-    <!-- VENDA - Galeria -->
-    <div class="section-title"><i class="fas fa-images"></i> Galeria de fotos</div>
     <div class="galeria-grid">
         <div class="galeria-item" onclick="abrirZoom(this.querySelector('img').src)"><img src="foto1.jpg" alt="Foto 1" onerror="this.parentElement.style.display='none'"></div>
         <div class="galeria-item" onclick="abrirZoom(this.querySelector('img').src)"><img src="foto2.jpg" alt="Foto 2" onerror="this.parentElement.style.display='none'"></div>
@@ -192,169 +172,200 @@
         <div class="galeria-item" onclick="abrirZoom(this.querySelector('img').src)"><img src="foto8.jpg" alt="Foto 8" onerror="this.parentElement.style.display='none'"></div>
     </div>
 
-    <!-- Modal Zoom -->
     <div id="zoomModal" class="modal-zoom" onclick="fecharZoom()">
         <span class="close-modal">&times;</span>
         <img id="zoomImg" src="" alt="Foto ampliada">
     </div>
 
-    <!-- VENDA - Cards -->
     <div class="info-cards">
-        <div class="info-card" onclick="fbq('track', 'ViewContent', {content_name: 'Preco'}); gtag('event', 'view_item', {item_name: 'Preco'});"><i class="fas fa-tag"></i><h3>Preço</h3><div class="valor">R$ 165.000</div></div>
-        <div class="info-card" onclick="fbq('track', 'ViewContent', {content_name: 'Dormitorios'}); gtag('event', 'view_item', {item_name: 'Dormitorios'});"><i class="fas fa-bed"></i><h3>Dormitórios</h3><div class="valor">2</div></div>
-        <div class="info-card" onclick="fbq('track', 'ViewContent', {content_name: 'Garagem'}); gtag('event', 'view_item', {item_name: 'Garagem'});"><i class="fas fa-car"></i><h3>Garagem</h3><div class="valor">1 vaga</div></div>
-        <div class="info-card" onclick="fbq('track', 'ViewContent', {content_name: 'Area'}); gtag('event', 'view_item', {item_name: 'Area'});"><i class="fas fa-ruler-combined"></i><h3>Área</h3><div class="valor">43m²</div></div>
+        <div class="info-card"><i class="fas fa-tag"></i><h3>Preço</h3><div class="valor">R$ 165.000</div></div>
+        <div class="info-card"><i class="fas fa-bed"></i><h3>Dormitórios</h3><div class="valor">2</div></div>
+        <div class="info-card"><i class="fas fa-car"></i><h3>Garagem</h3><div class="valor">1 vaga</div></div>
+        <div class="info-card"><i class="fas fa-ruler-combined"></i><h3>Área</h3><div class="valor">43m²</div></div>
     </div>
 
-    <!-- VENDA - Descrição -->
     <div class="descricao-box">
         <div class="section-title" style="border-left: none; padding-left: 0;"><i class="fas fa-info-circle"></i> Sobre o imóvel</div>
-        <p class="descricao-texto"><strong>Lindo apartamento no Vitta Jardins do Engenho</strong> - Lazer completo em Sertãozinho. Apartamento de <strong>43m² com planta inteligente</strong>, ideal para quem busca conforto, segurança e praticidade.</p>
+        <p><strong>Lindo apartamento no Vitta Jardins do Engenho</strong> - Lazer completo em Sertãozinho. Apartamento de <strong>43m² com planta inteligente</strong>, ideal para quem busca conforto, segurança e praticidade.</p>
         <ul class="lista-beneficios">
             <li><i class="fas fa-check-circle"></i> 2 dormitórios com excelente ventilação</li>
-            <li><i class="fas fa-check-circle"></i> Sala e cozinha integradas (conceito aberto)</li>
+            <li><i class="fas fa-check-circle"></i> Sala e cozinha integradas</li>
             <li><i class="fas fa-check-circle"></i> 1 vaga de garagem coberta</li>
             <li><i class="fas fa-check-circle"></i> Condomínio com lazer completo</li>
-            <li><i class="fas fa-check-circle"></i> Portaria 24 horas com segurança</li>
+            <li><i class="fas fa-check-circle"></i> Portaria 24 horas</li>
         </ul>
-        <div class="financiavel" onclick="fbq('track', 'ViewContent', {content_name: 'Financiavel'}); gtag('event', 'view_item', {item_name: 'Financiavel'});"><i class="fas fa-check-circle"></i> ATUALIZAÇÕES! FINANCIÁVEL - Consulte condições</div>
+        <div class="financiavel"><i class="fas fa-check-circle"></i> ATUALIZAÇÕES! FINANCIÁVEL</div>
     </div>
 
-    <!-- VENDA - Detalhes -->
-    <div class="section-title"><i class="fas fa-list-ul"></i> Detalhes do imóvel</div>
-    <div class="detalhes-grid">
-        <div class="detalhe-item"><i class="fas fa-bed"></i><div class="texto"><h4>Dormitórios</h4><p>2 quartos amplos</p></div></div>
-        <div class="detalhe-item"><i class="fas fa-toilet"></i><div class="texto"><h4>Banheiros</h4><p>1 banheiro social</p></div></div>
-        <div class="detalhe-item"><i class="fas fa-car"></i><div class="texto"><h4>Garagem</h4><p>1 vaga coberta</p></div></div>
-        <div class="detalhe-item"><i class="fas fa-utensils"></i><div class="texto"><h4>Cozinha</h4><p>Integrada com sala</p></div></div>
-        <div class="detalhe-item"><i class="fas fa-shield-alt"></i><div class="texto"><h4>Segurança</h4><p>Portaria 24h</p></div></div>
-        <div class="detalhe-item"><i class="fas fa-sun"></i><div class="texto"><h4>Ventilação</h4><p>Excelente insolação</p></div></div>
-    </div>
-
-    <!-- VENDA - Lazer -->
-    <div class="section-title"><i class="fas fa-swimmer"></i> Lazer completo</div>
-    <div class="lazer-grid">
-        <div class="lazer-item"><i class="fas fa-swimmer"></i> Piscina adulto</div>
-        <div class="lazer-item"><i class="fas fa-child"></i> Piscina infantil</div>
-        <div class="lazer-item"><i class="fas fa-dumbbell"></i> Academia</div>
-        <div class="lazer-item"><i class="fas fa-utensils"></i> Espaço gourmet</div>
-        <div class="lazer-item"><i class="fas fa-fire"></i> Churrasqueira</div>
-        <div class="lazer-item"><i class="fas fa-futbol"></i> Campo society</div>
-        <div class="lazer-item"><i class="fas fa-tree"></i> Playground</div>
-        <div class="lazer-item"><i class="fas fa-table-tennis"></i> Salão de jogos</div>
-        <div class="lazer-item"><i class="fas fa-book"></i> Sala de leitura</div>
-        <div class="lazer-item"><i class="fas fa-dog"></i> Pet play</div>
-        <div class="lazer-item"><i class="fas fa-shower"></i> Sauna</div>
-        <div class="lazer-item"><i class="fas fa-bicycle"></i> Bicicletário</div>
-    </div>
-
-    <!-- VENDA - Diferenciais -->
-    <div class="diferenciais-box">
-        <div class="section-title" style="border-left: none; padding-left: 0;"><i class="fas fa-star"></i> Diferenciais</div>
-        <div class="diferenciais-grid">
-            <div><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Planta inteligente</div>
-            <div><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Acabamento premium</div>
-            <div><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Valorização garantida</div>
-            <div><i class="fas fa-check-circle" style="color:#ff8c00;"></i> Documentação regular</div>
-        </div>
-    </div>
-
-    <!-- VENDA - Valores -->
-    <div class="valores-box">
-        <div class="section-title" style="border-left: none; padding-left: 0;"><i class="fas fa-calculator"></i> Transparência</div>
-        <div class="valores-grid">
-            <div class="valor-item"><strong>💰 Preço:</strong> R$ 165.000</div>
-            <div class="valor-item"><strong>🏢 Condomínio:</strong> R$ 250</div>
-            <div class="valor-item"><strong>🏠 IPTU:</strong> R$ 80/mês</div>
-            <div class="valor-item"><strong>📋 ITBI:</strong> 2%</div>
-        </div>
-        <div class="financiavel" style="margin-top: 0;"><i class="fas fa-handshake"></i> Financiamento disponível (Caixa, Itaú, Bradesco)</div>
-    </div>
-
-    <!-- ==================== NOVOS IMÓVEIS PARA ALUGUEL ==================== -->
-    <div class="section-title-aluguel"><i class="fas fa-home"></i> Imóveis para Aluguel</div>
+    <!-- ==================== VITTA SANTA ELISA - VENDA MCMV ==================== -->
+    <div class="section-title-aluguel"><i class="fas fa-home"></i> Venda - Vitta Santa Elisa (MCMV)</div>
     
-    <div class="aluguel-grid">
-        <!-- Apartamento 1 - Aluguel -->
-        <div class="aluguel-card">
-            <div class="aluguel-card-header">
+    <div class="imoveis-grid">
+        <div class="imovel-card">
+            <div class="imovel-card-header bg-mcmv">
+                <h3><i class="fas fa-building"></i> Vitta Santa Elisa</h3>
+                <div class="preco">Entrada R$ 21.000</div>
+                <p style="font-size: 0.8rem;">Minha Casa Minha Vida</p>
+            </div>
+            <div class="imovel-card-body">
+                <p><i class="fas fa-bed" style="color:#ff9800;"></i> <strong>2 quartos</strong> | <i class="fas fa-toilet" style="color:#ff9800;"></i> <strong>1 banheiro</strong></p>
+                <p><i class="fas fa-car" style="color:#ff9800;"></i> 1 vaga coberta | <i class="fas fa-ruler-combined" style="color:#ff9800;"></i> 43,06 m²</p>
+                <p><i class="fas fa-water" style="color:#ff9800;"></i> Água e gás incluídos no condomínio</p>
+                <div class="imovel-features">
+                    <span class="imovel-feature">🏊 Piscina</span>
+                    <span class="imovel-feature">🛡️ Portaria 24h</span>
+                    <span class="imovel-feature">🏋️ Academia</span>
+                    <span class="imovel-feature">🐶 PET Place</span>
+                    <span class="imovel-feature">🛒 Mercadinho</span>
+                </div>
+                <p style="margin-top: 0.8rem;"><i class="fas fa-chart-line"></i> <strong>Financiamento MCMV:</strong></p>
+                <p>• Entrada: <strong>R$ 21.000</strong></p>
+                <p>• Subsídio: <strong>R$ 2.760</strong></p>
+                <p>• Parcela inicial: <strong>R$ 660</strong> (decrescente)</p>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Aparecido Savegnago, 655 - Sertãozinho/SP</p>
+                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no Vitta Santa Elisa - entrada R$ 21.000 pelo MCMV. Gostaria de mais informações!" target="_blank" class="btn-whatsapp-imovel" style="background:#ff9800;">📱 Quero saber mais - (16) 98819-1302</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== ALUGUEL - SERTÃOZINHO ==================== -->
+    <div class="section-title-aluguel"><i class="fas fa-home"></i> Aluguel - Sertãozinho</div>
+    
+    <div class="imoveis-grid">
+        <!-- Apartamento Vitta Sertãozinho -->
+        <div class="imovel-card">
+            <div class="imovel-card-header bg-aluguel">
                 <h3><i class="fas fa-building"></i> Apartamento Térreo</h3>
-                <div class="preco-aluguel">R$ 1.500<span style="font-size: 0.9rem;">/mês</span></div>
+                <div class="preco">R$ 1.500<span style="font-size: 0.9rem;">/mês</span></div>
                 <p style="font-size: 0.8rem;">Condomínio Vitta Sertãozinho</p>
             </div>
-            <div class="aluguel-card-body">
+            <div class="imovel-card-body">
                 <p><i class="fas fa-bed"></i> <strong>2 quartos</strong> | <i class="fas fa-toilet"></i> <strong>1 banheiro</strong></p>
-                <p><i class="fas fa-car"></i> Vaga de estacionamento coberta</p>
-                <p><i class="fas fa-water"></i> Água e gás incluídos no condomínio</p>
-                <div class="aluguel-features">
-                    <span class="aluguel-feature">🛡️ Portaria 24h</span>
-                    <span class="aluguel-feature">🏊 Piscina</span>
-                    <span class="aluguel-feature">🏋️ Academia</span>
-                    <span class="aluguel-feature">🎮 Salão de festas</span>
-                    <span class="aluguel-feature">🔥 Churrasqueiras</span>
-                    <span class="aluguel-feature">🛒 Mercadinho</span>
+                <p><i class="fas fa-car"></i> Vaga coberta | <i class="fas fa-water"></i> Água e gás incluso</p>
+                <div class="imovel-features">
+                    <span class="imovel-feature">🛡️ Portaria 24h</span>
+                    <span class="imovel-feature">🏊 Piscina</span>
+                    <span class="imovel-feature">🏋️ Academia</span>
+                    <span class="imovel-feature">🎮 Salão de festas</span>
+                    <span class="imovel-feature">🔥 Churrasqueiras</span>
                 </div>
-                <p style="margin-top: 0.8rem;"><i class="fas fa-map-marker-alt"></i> Próximo a academias, supermercados, farmácias e ponto de ônibus</p>
                 <p><i class="fas fa-file-signature"></i> Condições: Caução ou fiador</p>
-                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento para alugar de R$ 1.500/mês no Vitta Sertãozinho. Gostaria de mais informações!" target="_blank" class="btn-whatsapp-aluguel" onclick="fbq('track', 'Lead', {content_name: 'AluguelApartamento1500'}); gtag('event', 'generate_lead', {lead_source: 'AluguelApartamento1500'});">
-                    <i class="fab fa-whatsapp"></i> Falar com Guilherme - (16) 98819-1302
-                </a>
+                <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
+                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento de R$ 1.500/mês no Vitta Sertãozinho!" target="_blank" class="btn-whatsapp-imovel">📱 Falar com Guilherme</a>
             </div>
         </div>
-
-        <!-- Casa 2 - Aluguel -->
-        <div class="aluguel-card">
-            <div class="aluguel-card-header">
+        
+        <!-- Casa Condomínio -->
+        <div class="imovel-card">
+            <div class="imovel-card-header bg-aluguel">
                 <h3><i class="fas fa-home"></i> Linda Casa em Condomínio</h3>
-                <div class="preco-aluguel">R$ 1.600<span style="font-size: 0.9rem;">/mês</span></div>
-                <p style="font-size: 0.8rem;">Com condomínio incluso</p>
+                <div class="preco">R$ 1.600<span style="font-size: 0.9rem;">/mês</span></div>
+                <p style="font-size: 0.8rem;">Sertãozinho/SP</p>
             </div>
-            <div class="aluguel-card-body">
-                <p><i class="fas fa-bed"></i> <strong>2 quartos</strong> | <i class="fas fa-toilet"></i> <strong>1 banheiro</strong> | <i class="fas fa-ruler-combined"></i> <strong>120m²</strong></p>
-                <p><i class="fas fa-car"></i> <strong>2 vagas</strong> de estacionamento</p>
-                <p><i class="fas fa-tree"></i> Quintal e área de serviços</p>
-                <p><i class="fas fa-water"></i> Água incluída no condomínio</p>
-                <div class="aluguel-features">
-                    <span class="aluguel-feature">🛡️ Portaria 24h</span>
-                    <span class="aluguel-feature">🏊 Piscina adulto</span>
-                    <span class="aluguel-feature">👶 Piscina infantil</span>
-                    <span class="aluguel-feature">🏋️ Crossfit</span>
-                    <span class="aluguel-feature">🔥 Churrasqueiras</span>
-                    <span class="aluguel-feature">🎮 Playground</span>
-                    <span class="aluguel-feature">🏀 Quadra</span>
+            <div class="imovel-card-body">
+                <p><i class="fas fa-bed"></i> <strong>2 quartos</strong> | <i class="fas fa-toilet"></i> <strong>1 banheiro</strong> | <i class="fas fa-ruler-combined"></i> 120m²</p>
+                <p><i class="fas fa-car"></i> <strong>2 vagas</strong> | <i class="fas fa-tree"></i> Quintal</p>
+                <p><i class="fas fa-water"></i> Água inclusa no condomínio</p>
+                <div class="imovel-features">
+                    <span class="imovel-feature">🏊 Piscinas</span>
+                    <span class="imovel-feature">🏋️ Crossfit</span>
+                    <span class="imovel-feature">🔥 Churrasqueiras</span>
+                    <span class="imovel-feature">🎮 Playground</span>
+                    <span class="imovel-feature">🏀 Quadra</span>
                 </div>
-                <p style="margin-top: 0.8rem;"><i class="fas fa-map-marker-alt"></i> Avenida José Ferreira dos Reis, 364 - Sertãozinho/SP</p>
-                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse na casa para alugar de R$ 1.600/mês no condomínio em Sertãozinho. Gostaria de mais informações!" target="_blank" class="btn-whatsapp-aluguel" onclick="fbq('track', 'Lead', {content_name: 'AluguelCasa1600'}); gtag('event', 'generate_lead', {lead_source: 'AluguelCasa1600'});">
-                    <i class="fab fa-whatsapp"></i> Falar com Guilherme - (16) 98819-1302
-                </a>
+                <p><i class="fas fa-map-marker-alt"></i> Av. José Ferreira dos Reis, 364 - Sertãozinho</p>
+                <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
+                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse na casa de R$ 1.600/mês no condomínio em Sertãozinho!" target="_blank" class="btn-whatsapp-imovel">📱 Quero saber mais</a>
             </div>
         </div>
     </div>
 
-    <!-- ==================== FIM DOS NOVOS IMÓVEIS ==================== -->
+    <!-- ==================== ALUGUEL - UBERLÂNDIA ==================== -->
+    <div class="section-title-uberlandia"><i class="fas fa-map-marker-alt"></i> Aluguel - Uberlândia (UFU)</div>
+    
+    <div class="imoveis-grid">
+        <!-- Apartamento Finotti -->
+        <div class="imovel-card">
+            <div class="imovel-card-header bg-uberlandia">
+                <h3><i class="fas fa-building"></i> Apartamento Finotti</h3>
+                <div class="preco">R$ 1.330<span style="font-size: 0.9rem;">/mês</span></div>
+                <p style="font-size: 0.8rem;">Próximo à UFU</p>
+            </div>
+            <div class="imovel-card-body">
+                <p><i class="fas fa-bed"></i> <strong>2 quartos</strong> | <i class="fas fa-toilet"></i> <strong>1 banheiro</strong> | <i class="fas fa-ruler-combined"></i> 60m²</p>
+                <p><i class="fas fa-car"></i> 1 vaga | <i class="fas fa-wind"></i> Ventiladores de teto</p>
+                <p><i class="fas fa-map-marker-alt"></i> Próximo ao Center Shopping e Centro Administrativo</p>
+                <p><i class="fas fa-file-signature"></i> Aceita: fiador, seguro fiança ou caução</p>
+                <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
+                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento de R$ 1.330/mês no Finotti - próximo à UFU!" target="_blank" class="btn-whatsapp-imovel">📱 Quero saber mais</a>
+            </div>
+        </div>
+        
+        <!-- Apartamento 150m da UFU -->
+        <div class="imovel-card">
+            <div class="imovel-card-header bg-uberlandia">
+                <h3><i class="fas fa-building"></i> Apartamento 150m da UFU</h3>
+                <div class="preco">R$ 1.600<span style="font-size: 0.9rem;">/mês</span></div>
+                <p style="font-size: 0.8rem;">Rua Isaac de Oliveira</p>
+            </div>
+            <div class="imovel-card-body">
+                <p><i class="fas fa-bed"></i> <strong>2 quartos</strong> | <i class="fas fa-toilet"></i> <strong>1 banheiro</strong> | <i class="fas fa-ruler-combined"></i> 60m²</p>
+                <p><i class="fas fa-car"></i> 1 vaga | <i class="fas fa-umbrella"></i> Sacada</p>
+                <p><i class="fas fa-water"></i> Água inclusa no condomínio</p>
+                <p><i class="fas fa-shield-alt"></i> Sistema de segurança com monitoramento</p>
+                <p><i class="fas fa-file-signature"></i> Aceita: fiador ou seguro fiança</p>
+                <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
+                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento de R$ 1.600/mês - 150m da UFU!" target="_blank" class="btn-whatsapp-imovel">📱 Quero saber mais</a>
+            </div>
+        </div>
+    </div>
 
-    <!-- Assessoria jurídica -->
+    <!-- ==================== ALUGUEL - RIBEIRÃO PRETO ==================== -->
+    <div class="section-title-ribeirao"><i class="fas fa-map-marker-alt"></i> Aluguel - Ribeirão Preto</div>
+    
+    <div class="imoveis-grid">
+        <div class="imovel-card">
+            <div class="imovel-card-header bg-ribeirao">
+                <h3><i class="fas fa-building"></i> Apartamento na Av. Caramuru</h3>
+                <div class="preco">R$ 1.550<span style="font-size: 0.9rem;">/mês</span></div>
+                <p style="font-size: 0.8rem;">Zona Sul - Ribeirão Preto</p>
+            </div>
+            <div class="imovel-card-body">
+                <p><i class="fas fa-bed"></i> <strong>2 quartos</strong> | <i class="fas fa-toilet"></i> <strong>1 banheiro</strong> | <i class="fas fa-ruler-combined"></i> 60m²</p>
+                <p><i class="fas fa-car"></i> 1 vaga | <i class="fas fa-umbrella"></i> Sacada</p>
+                <div class="imovel-features">
+                    <span class="imovel-feature">🏊 Piscinas</span>
+                    <span class="imovel-feature">🏋️ Academia</span>
+                    <span class="imovel-feature">🍽️ Espaço Gourmet</span>
+                    <span class="imovel-feature">🎮 Salão de festas</span>
+                    <span class="imovel-feature">🛡️ Portaria 24h</span>
+                    <span class="imovel-feature">🔒 Cerca elétrica</span>
+                </div>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Caramuru - próximo ao Ribeirão Shopping</p>
+                <p><i class="fas fa-file-signature"></i> Seguro fiança ou fiador</p>
+                <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
+                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento de R$ 1.550/mês na Av. Caramuru - Ribeirão Preto!" target="_blank" class="btn-whatsapp-imovel">📱 Quero saber mais</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== ASSESSORIA JURÍDICA ==================== -->
     <div class="advogado-box">
         <div class="section-title" style="color: white;"><i class="fas fa-gavel"></i> Assessoria jurídica</div>
         <div class="advogado-grid">
             <div class="advogado-item"><i class="fas fa-user-tie"></i> <strong>Dr. Guilherme José de Souza Moretti</strong></div>
             <div class="advogado-item"><i class="fas fa-id-card"></i> OAB/SP 362.611</div>
             <div class="advogado-item"><i class="fas fa-graduation-cap"></i> Doutor USP | Mestre USP | Direito UFU | Eng. Elétrica UFU</div>
-            <div class="advogado-item"><i class="fas fa-briefcase"></i> Advocacia empresarial • Direito condominial</div>
+            <div class="advogado-item"><i class="fas fa-briefcase"></i> Advocacia empresarial • Direito imobiliário • Direito condominial</div>
             <div class="advogado-item"><i class="fas fa-envelope"></i> guilherme@moretti.adv.br</div>
             <div class="advogado-item"><i class="fab fa-whatsapp"></i> (16) 98819-1302</div>
         </div>
     </div>
 
     <!-- WhatsApp principal -->
-    <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse nos imóveis anunciados. Gostaria de mais informações!" target="_blank" class="whatsapp-btn" onclick="fbq('track', 'Lead', {content_name: 'WhatsAppPrincipal'}); gtag('event', 'generate_lead', {lead_source: 'WhatsAppPrincipal'});">
+    <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse nos imóveis anunciados. Gostaria de mais informações!" target="_blank" class="whatsapp-btn">
         <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> Fale conosco - (16) 98819-1302
     </a>
-
-    <!-- Facebook -->
-    <div class="facebook-link">
-        <a href="https://www.facebook.com/marketplace/item/2426500021162895/" target="_blank"><i class="fab fa-facebook"></i> Ver anúncio no Facebook Marketplace</a>
-    </div>
 
     <!-- Footer -->
     <div class="footer">
@@ -362,7 +373,7 @@
         <div class="contact-info">
             <span><i class="fab fa-whatsapp"></i> (16) 98819-1302</span>
             <span><i class="fas fa-envelope"></i> guilherme@moretti.adv.br</span>
-            <span><i class="fas fa-map-marker-alt"></i> Ribeirão Preto - SP / Sertãozinho - SP</span>
+            <span><i class="fas fa-map-marker-alt"></i> Sertãozinho | Uberlândia | Ribeirão Preto</span>
         </div>
         <hr>
         <div>© 2026 - Todos os direitos reservados</div>
@@ -370,7 +381,7 @@
 </div>
 
 <!-- WhatsApp flutuante -->
-<a href="https://wa.me/5516988191302?text=Olá! Tenho interesse nos imóveis anunciados." target="_blank" class="whatsapp-float" onclick="fbq('track', 'Lead', {content_name: 'WhatsAppFloat'}); gtag('event', 'generate_lead', {lead_source: 'WhatsAppFloat'});">
+<a href="https://wa.me/5516988191302?text=Olá! Tenho interesse nos imóveis anunciados." target="_blank" class="whatsapp-float">
     <i class="fab fa-whatsapp"></i>
 </a>
 
@@ -387,7 +398,7 @@
     function fecharZoom() { document.getElementById('zoomModal').classList.remove('active'); }
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') fecharZoom(); });
     
-    console.log('✅ Site com VENDA + ALUGUEL - Meta Pixel e GTM ativos');
+    console.log('✅ Site com todos os imóveis - Todos SEM mobília');
 </script>
 
 </body>

@@ -13,13 +13,21 @@
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TK64WDNH');</script>
     <!-- End Google Tag Manager -->
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) em português -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8FD6KZWG5"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-Y8FD6KZWG5');
+      
+      // Eventos personalizados em português
+      function visualizouItem(nomeItem) {
+        gtag('event', 'visualizou_item', { 'nome_item': nomeItem });
+      }
+      function gerarLead(fonte) {
+        gtag('event', 'gerar_lead', { 'fonte_lead': fonte });
+      }
     </script>
     
     <!-- Meta Pixel Code -->
@@ -56,7 +64,7 @@
         .badge-highlight { background: #ff8c00; color: white; }
         .badge-highlight i { color: white; }
         
-        .section-title { margin: 2rem 0 1.2rem; font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #1a472a; display: flex; align-items: center; gap: 10px; border-left: 4px solid #ff8c00; padding-left: 1rem; }
+        .section-title { margin: 2rem 0 1.2rem; font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #1a472a; display: flex; align-items: center; gap: 10px; border-left: 4px solid #ff8c00; padding-left: 1rem; scroll-margin-top: 20px; }
         .section-title-venda { border-left-color: #1a472a; }
         .section-title-aluguel { border-left-color: #2196F3; }
         .section-title-uberlandia { border-left-color: #9C27B0; }
@@ -73,7 +81,7 @@
         .imovel-card-body i { width: 25px; margin-right: 8px; }
         .imovel-features { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
         .imovel-feature { border-radius: 50px; padding: 0.3rem 0.8rem; font-size: 0.75rem; background: #f0f2f5; }
-        .btn-whatsapp-imovel { display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 0.7rem 1.2rem; border-radius: 50px; font-weight: 600; margin-top: 1rem; transition: 0.2s; text-align: center; width: 100%; }
+        .btn-whatsapp-imovel { display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 0.7rem 1.2rem; border-radius: 50px; font-weight: 600; margin-top: 1rem; transition: 0.2s; text-align: center; width: 100%; cursor: pointer; }
         .btn-whatsapp-imovel:hover { background: #128C7E; transform: scale(1.02); }
         
         .bg-venda { background: linear-gradient(135deg, #1a472a, #0d2b1a); }
@@ -90,7 +98,7 @@
         
         .whatsapp-float { position: fixed; bottom: 80px; right: 20px; background: #25D366; color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.2); z-index: 1001; transition: 0.3s; text-decoration: none; }
         .whatsapp-float:hover { transform: scale(1.1); background: #128C7E; }
-        .whatsapp-btn { display: flex; align-items: center; justify-content: center; gap: 12px; background: #25D366; color: white; text-decoration: none; padding: 1rem; border-radius: 60px; font-weight: 700; font-size: 1.1rem; margin: 1.5rem 0; transition: 0.2s; }
+        .whatsapp-btn { display: flex; align-items: center; justify-content: center; gap: 12px; background: #25D366; color: white; text-decoration: none; padding: 1rem; border-radius: 60px; font-weight: 700; font-size: 1.1rem; margin: 1.5rem 0; transition: 0.2s; cursor: pointer; }
         .whatsapp-btn:hover { background: #128C7E; transform: scale(1.02); }
         .footer { background: #1a2a3a; color: white; margin-top: 2rem; padding: 1.5rem; text-align: center; border-radius: 30px 30px 0 0; font-size: 0.8rem; }
         .contact-info { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 0.8rem 0; }
@@ -129,13 +137,13 @@
     </div>
     
     <div class="menu-navegacao">
-        <a href="#venda" class="menu-item"><i class="fas fa-shopping-cart"></i> Venda</a>
+        <a href="#venda" class="menu-item" onclick="visualizouItem('menu_venda')"><i class="fas fa-shopping-cart"></i> Venda</a>
         <span class="menu-divisor">|</span>
-        <a href="#aluguel-sertaozinho" class="menu-item"><i class="fas fa-home"></i> Aluguel - Sertãozinho</a>
+        <a href="#aluguel-sertaozinho" class="menu-item" onclick="visualizouItem('menu_aluguel_sertaozinho')"><i class="fas fa-home"></i> Aluguel - Sertãozinho</a>
         <span class="menu-divisor">|</span>
-        <a href="#aluguel-uberlandia" class="menu-item"><i class="fas fa-map-marker-alt"></i> Aluguel - Uberlândia</a>
+        <a href="#aluguel-uberlandia" class="menu-item" onclick="visualizouItem('menu_aluguel_uberlandia')"><i class="fas fa-map-marker-alt"></i> Aluguel - Uberlândia</a>
         <span class="menu-divisor">|</span>
-        <a href="#aluguel-ribeirao" class="menu-item"><i class="fas fa-map-marker-alt"></i> Aluguel - Ribeirão Preto</a>
+        <a href="#aluguel-ribeirao" class="menu-item" onclick="visualizouItem('menu_aluguel_ribeirao')"><i class="fas fa-map-marker-alt"></i> Aluguel - Ribeirão Preto</a>
     </div>
     
     <div class="submenu-local">
@@ -153,7 +161,7 @@
     </div>
 
     <!-- VENDA -->
-    <div id="venda" class="section-title section-title-venda" style="scroll-margin-top: 20px;"><i class="fas fa-shopping-cart"></i> Venda</div>
+    <div id="venda" class="section-title section-title-venda"><i class="fas fa-shopping-cart"></i> Venda</div>
     
     <div class="imoveis-grid">
         <div class="imovel-card">
@@ -184,7 +192,7 @@
                 <p><i class="fas fa-chart-line"></i> <strong>Financiamento disponível</strong> (Caixa, Itaú, Bradesco)</p>
                 <p><i class="fas fa-file-signature"></i> Documentação regular - Escritura pronta</p>
                 <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
-                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento Vitta Jardins do Engenho de R$ 165.000 em Sertãozinho!" target="_blank" class="btn-whatsapp-imovel">📱 Quero saber mais - (16) 98819-1302</a>
+                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento Vitta Jardins do Engenho de R$ 165.000 em Sertãozinho!" target="_blank" class="btn-whatsapp-imovel" onclick="gerarLead('whatsapp_vitta_engenho'); visualizouItem('vitta_jardins_engenho')">📱 Quero saber mais - (16) 98819-1302</a>
             </div>
         </div>
         
@@ -211,13 +219,13 @@
                 <p>• Parcela inicial: <strong>R$ 660</strong> (decrescente)</p>
                 <p><i class="fas fa-map-marker-alt"></i> Av. Aparecido Savegnago, 655 - Sertãozinho/SP</p>
                 <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
-                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no Vitta Santa Elisa - entrada R$ 21.000 pelo MCMV!" target="_blank" class="btn-whatsapp-imovel" style="background:#ff9800;">📱 Quero saber mais - (16) 98819-1302</a>
+                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no Vitta Santa Elisa - entrada R$ 21.000 pelo MCMV!" target="_blank" class="btn-whatsapp-imovel" style="background:#ff9800;" onclick="gerarLead('whatsapp_santa_elisa'); visualizouItem('vitta_santa_elisa')">📱 Quero saber mais - (16) 98819-1302</a>
             </div>
         </div>
     </div>
 
     <!-- ALUGUEL - SERTÃOZINHO -->
-    <div id="aluguel-sertaozinho" class="section-title section-title-aluguel" style="scroll-margin-top: 20px;"><i class="fas fa-city"></i> Aluguel - Sertãozinho</div>
+    <div id="aluguel-sertaozinho" class="section-title section-title-aluguel"><i class="fas fa-city"></i> Aluguel - Sertãozinho</div>
     
     <div class="imoveis-grid">
         <div class="imovel-card">
@@ -238,7 +246,7 @@
                 </div>
                 <p><i class="fas fa-file-signature"></i> Condições: Caução ou fiador</p>
                 <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
-                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento de R$ 1.500/mês no Vitta Sertãozinho!" target="_blank" class="btn-whatsapp-imovel">📱 Falar com Guilherme</a>
+                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento de R$ 1.500/mês no Vitta Sertãozinho!" target="_blank" class="btn-whatsapp-imovel" onclick="gerarLead('whatsapp_apto_1500'); visualizouItem('apartamento_terreo_1500')">📱 Falar com Guilherme</a>
             </div>
         </div>
         
@@ -261,13 +269,13 @@
                 </div>
                 <p><i class="fas fa-map-marker-alt"></i> Av. José Ferreira dos Reis, 364 - Sertãozinho</p>
                 <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
-                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse na casa de R$ 1.600/mês no condomínio em Sertãozinho!" target="_blank" class="btn-whatsapp-imovel">📱 Quero saber mais</a>
+                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse na casa de R$ 1.600/mês no condomínio em Sertãozinho!" target="_blank" class="btn-whatsapp-imovel" onclick="gerarLead('whatsapp_casa_1600'); visualizouItem('casa_condominio_1600')">📱 Quero saber mais</a>
             </div>
         </div>
     </div>
 
     <!-- ALUGUEL - UBERLÂNDIA -->
-    <div id="aluguel-uberlandia" class="section-title section-title-uberlandia" style="scroll-margin-top: 20px;"><i class="fas fa-university"></i> Aluguel - Uberlândia</div>
+    <div id="aluguel-uberlandia" class="section-title section-title-uberlandia"><i class="fas fa-university"></i> Aluguel - Uberlândia</div>
     
     <div class="imoveis-grid">
         <div class="imovel-card">
@@ -282,7 +290,7 @@
                 <p><i class="fas fa-map-marker-alt"></i> Próximo ao Center Shopping e Centro Administrativo</p>
                 <p><i class="fas fa-file-signature"></i> Aceita: fiador, seguro fiança ou caução</p>
                 <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
-                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento de R$ 1.330/mês no Finotti - próximo à UFU!" target="_blank" class="btn-whatsapp-imovel">📱 Quero saber mais</a>
+                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento de R$ 1.330/mês no Finotti - próximo à UFU!" target="_blank" class="btn-whatsapp-imovel" onclick="gerarLead('whatsapp_finotti_1330'); visualizouItem('apartamento_finotti_1330')">📱 Quero saber mais</a>
             </div>
         </div>
         
@@ -299,13 +307,13 @@
                 <p><i class="fas fa-shield-alt"></i> Sistema de segurança com monitoramento</p>
                 <p><i class="fas fa-file-signature"></i> Aceita: fiador ou seguro fiança</p>
                 <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
-                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento de R$ 1.600/mês - 150m da UFU!" target="_blank" class="btn-whatsapp-imovel">📱 Quero saber mais</a>
+                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento de R$ 1.600/mês - 150m da UFU!" target="_blank" class="btn-whatsapp-imovel" onclick="gerarLead('whatsapp_ufu_1600'); visualizouItem('apartamento_150m_ufu_1600')">📱 Quero saber mais</a>
             </div>
         </div>
     </div>
 
     <!-- ALUGUEL - RIBEIRÃO PRETO -->
-    <div id="aluguel-ribeirao" class="section-title section-title-ribeirao" style="scroll-margin-top: 20px;"><i class="fas fa-coffee"></i> Aluguel - Ribeirão Preto</div>
+    <div id="aluguel-ribeirao" class="section-title section-title-ribeirao"><i class="fas fa-coffee"></i> Aluguel - Ribeirão Preto</div>
     
     <div class="imoveis-grid">
         <div class="imovel-card">
@@ -328,7 +336,7 @@
                 <p><i class="fas fa-map-marker-alt"></i> Av. Caramuru - próximo ao Ribeirão Shopping</p>
                 <p><i class="fas fa-file-signature"></i> Seguro fiança ou fiador</p>
                 <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
-                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento de R$ 1.550/mês na Av. Caramuru - Ribeirão Preto!" target="_blank" class="btn-whatsapp-imovel">📱 Quero saber mais</a>
+                <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse no apartamento de R$ 1.550/mês na Av. Caramuru - Ribeirão Preto!" target="_blank" class="btn-whatsapp-imovel" onclick="gerarLead('whatsapp_caramuru_1550'); visualizouItem('apartamento_caramuru_1550')">📱 Quero saber mais</a>
             </div>
         </div>
     </div>
@@ -347,7 +355,7 @@
     </div>
 
     <!-- WhatsApp principal -->
-    <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse nos imóveis anunciados!" target="_blank" class="whatsapp-btn">
+    <a href="https://wa.me/5516988191302?text=Olá! Tenho interesse nos imóveis anunciados!" target="_blank" class="whatsapp-btn" onclick="gerarLead('whatsapp_principal'); visualizouItem('botao_whatsapp_principal')">
         <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> Fale conosco - (16) 98819-1302
     </a>
 
@@ -365,7 +373,7 @@
 </div>
 
 <!-- WhatsApp flutuante -->
-<a href="https://wa.me/5516988191302?text=Olá! Tenho interesse nos imóveis anunciados." target="_blank" class="whatsapp-float">
+<a href="https://wa.me/5516988191302?text=Olá! Tenho interesse nos imóveis anunciados." target="_blank" class="whatsapp-float" onclick="gerarLead('whatsapp_flutuante'); visualizouItem('botao_whatsapp_flutuante')">
     <i class="fab fa-whatsapp"></i>
 </a>
 
@@ -378,7 +386,36 @@
     btn.style.display = 'none';
     btn.addEventListener('click', (e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
     
-    console.log('✅ Site com menu de navegação - Venda e Aluguel por localização');
+    // Funções do Google Analytics em português
+    function visualizouItem(nomeItem) {
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'visualizou_item', { 'nome_item': nomeItem });
+            console.log('GA: visualizou_item - ' + nomeItem);
+        }
+    }
+    
+    function gerarLead(fonte) {
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'gerar_lead', { 'fonte_lead': fonte });
+            console.log('GA: gerar_lead - ' + fonte);
+        }
+    }
+    
+    // Registrar visualização de página
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'visualizacao_pagina', { 'pagina': 'home_imoveis' });
+    }
+    
+    // Rastrear cliques nos menus
+    document.querySelectorAll('.menu-item, .submenu-item').forEach(item => {
+        item.addEventListener('click', function() {
+            const destino = this.innerText.trim();
+            visualizouItem('menu_' + destino.toLowerCase().replace(/ /g, '_'));
+        });
+    });
+    
+    console.log('✅ Google Analytics em português - Site de Imóveis carregado');
+    console.log('✅ Eventos: visualizou_item, gerar_lead, visualizacao_pagina');
 </script>
 
 </body>

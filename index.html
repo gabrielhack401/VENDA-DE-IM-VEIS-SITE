@@ -3,315 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>Imóveis em Sertãozinho, Uberlândia e Ribeirão Preto | Venda e Aluguel</title>
-    <meta name="description" content="Apartamentos e casas para venda e aluguel em Sertãozinho, Uberlândia e Ribeirão Preto. Financiamento MCMV, entrada a partir de R$21.000. Contato (16) 98170-7762">
-    <meta name="keywords" content="apartamento Sertãozinho, aluguel Uberlândia, aluguel Ribeirão Preto, apartamento UFU, MCMV">
-    <meta name="author" content="Gabriel Moretti - Responsável">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TK64WDNH');</script>
-    <!-- End Google Tag Manager -->
-    
-    <!-- Google tag (gtag.js) em português -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8FD6KZWG5"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-Y8FD6KZWG5');
-      
-      function visualizouItem(nomeItem) {
-        gtag('event', 'visualizou_item', { 'nome_item': nomeItem });
-      }
-      function gerarLead(fonte) {
-        gtag('event', 'gerar_lead', { 'fonte_lead': fonte });
-      }
-    </script>
-    
-    <!-- Meta Pixel Code -->
-    <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','991858916560412');fbq('track','PageView');</script>
-    <!-- End Meta Pixel Code -->
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background: #f5f7fa; font-family: 'Inter', sans-serif; color: #1a2a3a; scroll-behavior: smooth; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-        
-        .hero { text-align: center; padding: 2rem 1.5rem; margin-bottom: 1.5rem; background: linear-gradient(135deg, #1a472a, #0d2b1a); border-radius: 32px; color: white; }
-        .logo-icon { font-size: 3rem; background: #ff8c00; width: 80px; height: 80px; line-height: 90px; border-radius: 50%; color: white; margin: 0 auto 1rem; }
-        h1 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 0.5rem; line-height: 1.3; }
-        .hero .preco-destaque { font-size: 1.5rem; font-weight: 800; background: rgba(255,255,255,0.15); display: inline-block; padding: 0.5rem 1.5rem; border-radius: 60px; margin-top: 0.8rem; }
-        .hero .tagline { font-size: 0.9rem; background: rgba(255,255,255,0.15); display: inline-block; padding: 0.4rem 1.2rem; border-radius: 40px; margin-top: 0.8rem; }
-        
-        .menu-navegacao { background: white; border-radius: 60px; padding: 0.8rem 1.5rem; margin-bottom: 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; border: 1px solid #e8ecf0; }
-        .menu-item { color: #1a472a; text-decoration: none; font-weight: 600; font-size: 0.9rem; padding: 0.5rem 0; transition: 0.2s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 2px solid transparent; }
-        .menu-item:hover { color: #ff8c00; border-bottom-color: #ff8c00; }
-        .menu-item i { font-size: 0.9rem; }
-        .menu-divisor { color: #ccc; }
-        
-        .submenu-local { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 2rem; }
-        .submenu-item { background: white; border-radius: 40px; padding: 0.4rem 1.2rem; font-size: 0.8rem; font-weight: 500; text-decoration: none; color: #1a472a; border: 1px solid #e8ecf0; transition: 0.2s; }
-        .submenu-item:hover { background: #ff8c00; color: white; border-color: #ff8c00; }
-        .submenu-item i { margin-right: 5px; }
-        
-        .feature-badges { display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
-        .badge { background: white; border-radius: 60px; padding: 0.6rem 1.2rem; font-weight: 600; font-size: 0.85rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: inline-flex; align-items: center; gap: 8px; color: #1a472a; }
-        .badge i { color: #ff8c00; }
-        .badge-highlight { background: #ff8c00; color: white; }
-        .badge-highlight i { color: white; }
-        
-        .section-title { margin: 2rem 0 1.2rem; font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #1a472a; display: flex; align-items: center; gap: 10px; border-left: 4px solid #ff8c00; padding-left: 1rem; scroll-margin-top: 20px; }
-        .section-title-venda { border-left-color: #1a472a; }
-        .section-title-aluguel { border-left-color: #2196F3; }
-        .section-title-uberlandia { border-left-color: #9C27B0; }
-        .section-title-ribeirao { border-left-color: #E91E63; }
-        
-        .imoveis-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
-        .imovel-card { background: white; border-radius: 24px; overflow: hidden; border: 1px solid #e8ecf0; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .imovel-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
-        .imovel-card-header { padding: 1rem; text-align: center; color: white; }
-        .imovel-card-header h3 { font-size: 1.2rem; margin-bottom: 0.3rem; }
-        .imovel-card-header .preco { font-size: 1.6rem; font-weight: 800; }
-        .imovel-card-body { padding: 1.2rem; }
-        .imovel-card-body p { margin: 0.5rem 0; line-height: 1.5; }
-        .imovel-card-body i { width: 25px; margin-right: 8px; }
-        .imovel-features { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
-        .imovel-feature { border-radius: 50px; padding: 0.3rem 0.8rem; font-size: 0.75rem; background: #f0f2f5; }
-        .btn-whatsapp-imovel { display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 0.7rem 1.2rem; border-radius: 50px; font-weight: 600; margin-top: 1rem; transition: 0.2s; text-align: center; width: 100%; cursor: pointer; }
-        .btn-whatsapp-imovel:hover { background: #128C7E; transform: scale(1.02); }
-        
-        .bg-venda { background: linear-gradient(135deg, #1a472a, #0d2b1a); }
-        .bg-aluguel { background: linear-gradient(135deg, #2196F3, #1976D2); }
-        .bg-uberlandia { background: linear-gradient(135deg, #9C27B0, #7B1FA2); }
-        .bg-ribeirao { background: linear-gradient(135deg, #E91E63, #C2185B); }
-        .bg-mcmv { background: linear-gradient(135deg, #ff9800, #f57c00); }
-        .bg-casa-venda { background: linear-gradient(135deg, #388E3C, #1B5E20); }
-        .bg-casa-aluguel { background: linear-gradient(135deg, #F57C00, #E65100); }
-        
-        .advogado-box { background: #1a2a3a; border-radius: 24px; padding: 1.5rem; margin: 2rem 0; color: white; }
-        .advogado-box .section-title { color: white; border-left-color: #ff8c00; margin-top: 0; }
-        .advogado-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 0.5rem; }
-        .advogado-item { padding: 0.3rem 0; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
-        .advogado-item i { color: #ff8c00; width: 24px; }
-        
-        .whatsapp-float { position: fixed; bottom: 80px; right: 20px; background: #25D366; color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.2); z-index: 1001; transition: 0.3s; text-decoration: none; }
-        .whatsapp-float:hover { transform: scale(1.1); background: #128C7E; }
-        .whatsapp-btn { display: flex; align-items: center; justify-content: center; gap: 12px; background: #25D366; color: white; text-decoration: none; padding: 1rem; border-radius: 60px; font-weight: 700; font-size: 1.1rem; margin: 1.5rem 0; transition: 0.2s; cursor: pointer; }
-        .whatsapp-btn:hover { background: #128C7E; transform: scale(1.02); }
-        .footer { background: #1a2a3a; color: white; margin-top: 2rem; padding: 1.5rem; text-align: center; border-radius: 30px 30px 0 0; font-size: 0.8rem; }
-        .contact-info { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 0.8rem 0; }
-        .contact-info i { color: #ff8c00; margin-right: 5px; }
-        hr { margin: 0.8rem 0; border-color: #2a4a5a; }
-        .btn-voltar { position: fixed; bottom: 20px; right: 20px; background: #1a472a; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; z-index: 1000; transition: 0.3s; }
-        .btn-voltar:hover { background: #ff8c00; transform: scale(1.1); }
-        
-        @media (max-width: 900px) {
-            .imoveis-grid { grid-template-columns: 1fr; }
-            .menu-navegacao { gap: 0.8rem; padding: 0.8rem 1rem; }
-            .menu-item { font-size: 0.75rem; }
-        }
-        @media (max-width: 650px) {
-            .container { padding: 1rem; }
-            h1 { font-size: 1.5rem; }
-            .badge { padding: 0.4rem 0.8rem; font-size: 0.7rem; }
-            .whatsapp-float { width: 48px; height: 48px; font-size: 1.5rem; bottom: 70px; }
-            .btn-voltar { width: 40px; height: 40px; }
-            .menu-navegacao { flex-direction: column; align-items: center; border-radius: 20px; gap: 0.5rem; }
-            .menu-divisor { display: none; }
-        }
-    </style>
-</head>
-<body>
-
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK64WDNH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=991858916560412&ev=PageView&noscript=1"/></noscript>
-
-<div class="container">
-    <div class="hero">
-        <div class="logo-icon"><i class="fas fa-building"></i></div>
-        <h1>Imóveis em Sertãozinho, Uberlândia e Ribeirão Preto</h1>
-        <div class="preco-destaque"><i class="fas fa-tag"></i> Venda e Aluguel</div>
-        <div class="tagline"><i class="fas fa-map-marker-alt"></i> Atendimento em toda região</div>
-    </div>
-    
-    <div class="menu-navegacao">
-        <a href="#venda" class="menu-item" onclick="visualizouItem('menu_venda')"><i class="fas fa-shopping-cart"></i> Venda</a>
-        <span class="menu-divisor">|</span>
-        <a href="#aluguel-sertaozinho" class="menu-item" onclick="visualizouItem('menu_aluguel_sertaozinho')"><i class="fas fa-home"></i> Aluguel - Sertãozinho</a>
-        <span class="menu-divisor">|</span>
-        <a href="#aluguel-uberlandia" class="menu-item" onclick="visualizouItem('menu_aluguel_uberlandia')"><i class="fas fa-map-marker-alt"></i> Aluguel - Uberlândia</a>
-        <span class="menu-divisor">|</span>
-        <a href="#aluguel-ribeirao" class="menu-item" onclick="visualizouItem('menu_aluguel_ribeirao')"><i class="fas fa-map-marker-alt"></i> Aluguel - Ribeirão Preto</a>
-    </div>
-    
-    <div class="submenu-local">
-        <a href="#venda" class="submenu-item"><i class="fas fa-tag"></i> Venda</a>
-        <a href="#aluguel-sertaozinho" class="submenu-item"><i class="fas fa-city"></i> Sertãozinho</a>
-        <a href="#aluguel-uberlandia" class="submenu-item"><i class="fas fa-university"></i> Uberlândia</a>
-        <a href="#aluguel-ribeirao" class="submenu-item"><i class="fas fa-coffee"></i> Ribeirão Preto</a>
-    </div>
-    
-    <div class="feature-badges">
-        <span class="badge badge-highlight"><i class="fas fa-fire"></i> Últimas unidades</span>
-        <span class="badge"><i class="fas fa-handshake"></i> Financiamento MCMV</span>
-        <span class="badge"><i class="fas fa-key"></i> Entrega imediata</span>
-        <span class="badge"><i class="fas fa-gem"></i> Oportunidade única</span>
-    </div>
-
-    <!-- VENDA -->
-    <div id="venda" class="section-title section-title-venda"><i class="fas fa-shopping-cart"></i> Venda</div>
-    
-    <div class="imoveis-grid">
-        <!-- Vitta Jardins do Engenho -->
-        <div class="imovel-card">
-            <div class="imovel-card-header bg-venda">
-                <h3><i class="fas fa-building"></i> Vitta Jardins do Engenho</h3>
-                <div class="preco">R$ 165.000</div>
-                <p style="font-size: 0.8rem;">Sertãozinho/SP</p>
-            </div>
-            <div class="imovel-card-body">
-                <p><i class="fas fa-bed"></i> <strong>2 dormitórios</strong> | <i class="fas fa-toilet"></i> <strong>1 banheiro</strong></p>
-                <p><i class="fas fa-car"></i> 1 vaga coberta | <i class="fas fa-ruler-combined"></i> 43m²</p>
-                <p><i class="fas fa-tree"></i> Sala e cozinha integradas (conceito aberto)</p>
-                <p><i class="fas fa-shield-alt"></i> Portaria 24 horas com segurança</p>
-                <div class="imovel-features">
-                    <span class="imovel-feature">🏊 Piscina adulto</span>
-                    <span class="imovel-feature">👶 Piscina infantil</span>
-                    <span class="imovel-feature">🏋️ Academia</span>
-                    <span class="imovel-feature">🍽️ Espaço gourmet</span>
-                    <span class="imovel-feature">🔥 Churrasqueira</span>
-                    <span class="imovel-feature">🏟️ Campo society</span>
-                    <span class="imovel-feature">🎮 Playground</span>
-                    <span class="imovel-feature">🎯 Salão de jogos</span>
-                    <span class="imovel-feature">📚 Sala de leitura</span>
-                    <span class="imovel-feature">🐶 Pet play</span>
-                    <span class="imovel-feature">🧖 Sauna</span>
-                    <span class="imovel-feature">🚲 Bicicletário</span>
-                </div>
-                <p><i class="fas fa-chart-line"></i> <strong>Financiamento disponível</strong> (Caixa, Itaú, Bradesco)</p>
-                <p><i class="fas fa-file-signature"></i> Documentação regular - Escritura pronta</p>
-                <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
-                <a href="https://wa.me/5516981707762?text=Olá! Tenho interesse no apartamento Vitta Jardins do Engenho de R$ 165.000 em Sertãozinho!" target="_blank" class="btn-whatsapp-imovel" onclick="gerarLead('whatsapp_vitta_engenho'); visualizouItem('vitta_jardins_engenho')">📱 Quero saber mais - (16) 98170-7762</a>
-            </div>
-        </div>
-        
-        <!-- Vitta Santa Elisa -->
-        <div class="imovel-card">
-            <div class="imovel-card-header bg-mcmv">
-                <h3><i class="fas fa-building"></i> Vitta Santa Elisa</h3>
-                <div class="preco">Entrada R$ 21.000</div>
-                <p style="font-size: 0.8rem;">Minha Casa Minha Vida</p>
-            </div>
-            <div class="imovel-card-body">
-                <p><i class="fas fa-bed" style="color:#ff9800;"></i> <strong>2 quartos</strong> | <i class="fas fa-toilet" style="color:#ff9800;"></i> <strong>1 banheiro</strong></p>
-                <p><i class="fas fa-car" style="color:#ff9800;"></i> 1 vaga coberta | <i class="fas fa-ruler-combined" style="color:#ff9800;"></i> 43,06 m²</p>
-                <p><i class="fas fa-building" style="color:#ff9800;"></i> Apartamento</p>
-                <p><i class="fas fa-water" style="color:#ff9800;"></i> Água e gás incluídos no condomínio</p>
-                <div class="imovel-features">
-                    <span class="imovel-feature">🏊 Piscina</span>
-                    <span class="imovel-feature">🛡️ Portaria 24h</span>
-                    <span class="imovel-feature">🏋️ Academia</span>
-                    <span class="imovel-feature">🐶 PET Place</span>
-                    <span class="imovel-feature">🛒 Mercadinho</span>
-                </div>
-                <p><i class="fas fa-chart-line"></i> <strong>Financiamento MCMV:</strong></p>
-                <p>• Entrada: <strong>R$ 21.000</strong></p>
-                <p>• Subsídio: <strong>R$ 2.760</strong></p>
-                <p>• Parcela inicial: <strong>R$ 660</strong> (decrescente)</p>
-                <p><i class="fas fa-map-marker-alt"></i> Av. Aparecido Savegnago, 655 - Sertãozinho/SP</p>
-                <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
-                <a href="https://wa.me/5516981707762?text=Olá! Tenho interesse no apartamento Vitta Santa Elisa - entrada R$ 21.000 pelo MCMV!" target="_blank" class="btn-whatsapp-imovel" style="background:#ff9800;" onclick="gerarLead('whatsapp_santa_elisa'); visualizouItem('vitta_santa_elisa')">📱 Quero saber mais - (16) 98170-7762</a>
-            </div>
-        </div>
-
-        <!-- CASA SÃO LUCAS - VENDA -->
-        <div class="imovel-card">
-            <div class="imovel-card-header bg-casa-venda">
-                <h3><i class="fas fa-home"></i> Casa São Lucas</h3>
-                <div class="preco">R$ 410.000</div>
-                <p style="font-size: 0.8rem;">Uberlândia - São Lucas</p>
-            </div>
-            <div class="imovel-card-body">
-                <p><i class="fas fa-bed"></i> <strong>3 quartos</strong> | <i class="fas fa-toilet"></i> <strong>1 banheiro</strong></p>
-                <p><i class="fas fa-car"></i> Garagem | <i class="fas fa-ruler-combined"></i> 240m²</p>
-                <p><i class="fas fa-couch"></i> 1 sala | <i class="fas fa-utensils"></i> 1 cozinha</p>
-                <p><i class="fas fa-tshirt"></i> Lavanderia (quintal dos fundos)</p>
-                <p><i class="fas fa-tree"></i> Quintal imenso</p>
-                <div class="imovel-features">
-                    <span class="imovel-feature">🏡 Casa ampla</span>
-                    <span class="imovel-feature">🌳 Quintal enorme</span>
-                    <span class="imovel-feature">🚗 Garagem</span>
-                    <span class="imovel-feature">🧺 Lavanderia</span>
-                </div>
-                <p><i class="fas fa-map-marker-alt"></i> Bairro São Lucas - Uberlândia/MG</p>
-                <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
-                <a href="https://wa.me/5516981707762?text=Olá! Tenho interesse na Casa São Lucas de R$ 410.000 em Uberlândia!" target="_blank" class="btn-whatsapp-imovel" onclick="gerarLead('whatsapp_casa_sao_lucas_venda'); visualizouItem('casa_sao_lucas_venda')">📱 Quero saber mais - (16) 98170-7762</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- ALUGUEL - SERTÃOZINHO -->
-    <div id="aluguel-sertaozinho" class="section-title section-title-aluguel"><i class="fas fa-city"></i> Aluguel - Sertãozinho</div>
-    
-    <div class="imoveis-grid">
-        <div class="imovel-card">
-            <div class="imovel-card-header bg-aluguel">
-                <h3><i class="fas fa-building"></i> Apartamento Térreo</h3>
-                <div class="preco">R$ 1.500<span style="font-size: 0.9rem;">/mês</span></div>
-                <p style="font-size: 0.8rem;">Condomínio Vitta Sertãozinho</p>
-            </div>
-            <div class="imovel-card-body">
-                <p><i class="fas fa-bed"></i> <strong>2 quartos</strong> | <i class="fas fa-toilet"></i> <strong>1 banheiro</strong></p>
-                <p><i class="fas fa-car"></i> Vaga coberta | <i class="fas fa-water"></i> Água e gás incluso</p>
-                <div class="imovel-features">
-                    <span class="imovel-feature">🛡️ Portaria 24h</span>
-                    <span class="imovel-feature">🏊 Piscina</span>
-                    <span class="imovel-feature">🏋️ Academia</span>
-                    <span class="imovel-feature">🎮 Salão de festas</span>
-                    <span class="imovel-feature">🔥 Churrasqueiras</span>
-                </div>
-                <p><i class="fas fa-file-signature"></i> Condições: Caução ou fiador</p>
-                <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
-                <a href="https://wa.me/5516981707762?text=Olá! Tenho interesse no apartamento de R$ 1.500/mês no Vitta Sertãozinho!" target="_blank" class="btn-whatsapp-imovel" onclick="gerarLead('whatsapp_apto_1500'); visualizouItem('apartamento_terreo_1500')">📱 Falar com Gabriel Moretti</a>
-            </div>
-        </div>
-        
-        <div class="imovel-card">
-            <div class="imovel-card-header bg-aluguel">
-                <h3><i class="fas fa-home"></i> Linda Casa em Condomínio</h3>
-                <div class="preco">R$ 1.600<span style="font-size: 0.9rem;">/mês</span></div>
-                <p style="font-size: 0.8rem;">Sertãozinho/SP</p>
-            </div>
-            <div class="imovel-card-body">
-                <p><i class="fas fa-bed"></i> <strong>2 quartos</strong> | <i class="fas fa-toilet"></i> <strong>1 banheiro</strong> | <i class="fas fa-ruler-combined"></i> 120m²</p>
-                <p><i class="fas fa-car"></i> <strong>2 vagas</strong> | <i class="fas fa-tree"></i> Quintal</p>
-                <p><i class="fas fa-water"></i> Água inclusa no condomínio</p>
-                <div class="imovel-features">
-                    <span class="imovel-feature">🏊 Piscinas</span>
-                    <span class="imovel-feature">🏋️ Crossfit</span>
-                    <span class="imovel-feature">🔥 Churrasqueiras</span>
-                    <span class="imovel-feature">🎮 Playground</span>
-                    <span class="imovel-feature">🏀 Quadra</span>
-                </div>
-                <p><i class="fas fa-map-marker-alt"></i> Av. José Ferreira dos Reis, 364 - Sertãozinho</p>
-                <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
-                <a href="https://wa.me/5516981707762?text=Olá! Tenho interesse na casa de R$ 1.600/mês no condomínio em Sertãozinho!" target="_blank" class="btn-whatsapp-imovel" onclick="gerarLead('whatsapp_casa_1600'); visualizouItem('casa_condominio_1600')">📱 Quero saber mais</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- ALUGUEL - UBERLÂNDIA -->
-    <div id="aluguel-uberlandia" class="section-title section-title-uberlandia"><i class="fas fa-university"></i> Aluguel - Uberlândia</div>
-    
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>Imóveis em Sertãozinho, Uberlândia e Ribeirão Preto | Venda e Aluguel</title>
+    <title>Imóveis em Sertãozinho, Ribeirão Preto e Uberlândia | Venda e Aluguel</title>
     <meta name="description" content="Apartamentos e casas para venda e aluguel em Sertãozinho, Ribeirão Preto e Uberlândia. Contato (16) 98170-7762">
     <meta name="keywords" content="apartamento Sertãozinho, aluguel Ribeirão Preto, imóvel Uberlândia, Vitta Santa Elisa">
     <meta name="author" content="Gabriel Moretti - Responsável">
@@ -374,8 +66,8 @@
         .section-title { margin: 2rem 0 1.2rem; font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #1a472a; display: flex; align-items: center; gap: 10px; border-left: 4px solid #ff8c00; padding-left: 1rem; scroll-margin-top: 20px; }
         .section-title-venda { border-left-color: #1a472a; }
         .section-title-aluguel { border-left-color: #2196F3; }
-        .section-title-uberlandia { border-left-color: #9C27B0; }
         .section-title-ribeirao { border-left-color: #E91E63; }
+        .section-title-uberlandia { border-left-color: #9C27B0; }
         
         .imoveis-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
         .imovel-card { background: white; border-radius: 24px; overflow: hidden; border: 1px solid #e8ecf0; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
@@ -393,8 +85,8 @@
         
         .bg-venda { background: linear-gradient(135deg, #1a472a, #0d2b1a); }
         .bg-aluguel { background: linear-gradient(135deg, #2196F3, #1976D2); }
-        .bg-uberlandia { background: linear-gradient(135deg, #9C27B0, #7B1FA2); }
         .bg-ribeirao { background: linear-gradient(135deg, #E91E63, #C2185B); }
+        .bg-uberlandia { background: linear-gradient(135deg, #9C27B0, #7B1FA2); }
         .bg-mcmv { background: linear-gradient(135deg, #ff9800, #f57c00); }
         .bg-casa-venda { background: linear-gradient(135deg, #388E3C, #1B5E20); }
         .bg-casa-aluguel { background: linear-gradient(135deg, #F57C00, #E65100); }
@@ -482,8 +174,8 @@
             </div>
             <div class="imovel-card-body">
                 <p><i class="fas fa-bed"></i> <strong>2 quartos</strong> | <i class="fas fa-toilet"></i> <strong>1 banheiro</strong></p>
-                <p><i class="fas fa-car"></i> 1 vaga | <i class="fas fa-ruler-combined"></i> 43m²</p>
                 <p><i class="fas fa-couch"></i> Sala | <i class="fas fa-utensils"></i> Cozinha | <i class="fas fa-tshirt"></i> Lavanderia</p>
+                <p><i class="fas fa-car"></i> 1 vaga | <i class="fas fa-ruler-combined"></i> 43m²</p>
                 <p><i class="fas fa-shield-alt"></i> Portaria 24h</p>
                 <div class="imovel-features">
                     <span class="imovel-feature">🏊 Piscinas</span>
@@ -491,6 +183,7 @@
                     <span class="imovel-feature">🔥 Churrasqueira</span>
                     <span class="imovel-feature">🎮 Playground</span>
                 </div>
+                <p><i class="fas fa-info-circle"></i> <strong>Pronto para morar</strong></p>
                 <p><i class="fas fa-info-circle"></i> <strong>Sem mobília</strong></p>
                 <a href="https://wa.me/5516981707762?text=Olá! Tenho interesse no Vitta Jardins do Engenho de R$ 165.000 em Sertãozinho!" target="_blank" class="btn-whatsapp-imovel" onclick="gerarLead('venda_jardins_engenho')">📱 Quero saber mais - (16) 98170-7762</a>
             </div>
@@ -505,8 +198,8 @@
             </div>
             <div class="imovel-card-body">
                 <p><i class="fas fa-bed"></i> <strong>2 quartos</strong> | <i class="fas fa-toilet"></i> <strong>1 banheiro</strong></p>
-                <p><i class="fas fa-car"></i> 1 vaga | <i class="fas fa-ruler-combined"></i> 43m²</p>
                 <p><i class="fas fa-couch"></i> Sala | <i class="fas fa-utensils"></i> Cozinha | <i class="fas fa-tshirt"></i> Lavanderia</p>
+                <p><i class="fas fa-car"></i> 1 vaga | <i class="fas fa-ruler-combined"></i> 43m²</p>
                 <p><i class="fas fa-money-bill"></i> <strong>Opção de entrada parcelada</strong></p>
                 <div class="imovel-features">
                     <span class="imovel-feature">🏊 Piscina</span>
